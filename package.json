@@ -1,7 +1,7 @@
 {
   "name": "fusion-framework",
   "version": "1.0.0-beta",
-  "description": "colleaction of fusion components",
+  "description": "Framework for Fusion Eco System",
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -48,6 +48,7 @@
     "@nrwl/nx-cloud": "latest",
     "@types/jest": "^27.4.1",
     "@types/node": "^18.0.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "^8.12.0",
     "eslint-plugin-rxjs": "^5.0.2",
     "husky": "^8.0.0",
@@ -55,7 +56,7 @@
     "lerna": "^5.1.6",
     "lerna-update-wizard": "^1.1.2",
     "lint-staged": "^13.0.1",
-    "nx": "14.5.7",
+    "nx": "14.5.10",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.4",
     "tslib": "^2.2.0",
