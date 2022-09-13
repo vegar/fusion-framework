@@ -3,7 +3,7 @@ import React, { lazy } from 'react';
 import { FrameworkProvider } from '@equinor/fusion-framework-react';
 import type { Fusion } from '@equinor/fusion-framework-react';
 
-import { initAppModules } from '@equinor/fusion-framework-app';
+import { configureModules } from '@equinor/fusion-framework-app';
 import type {
     AppManifest,
     AppModuleInitiator,
@@ -20,12 +20,11 @@ export type ComponentRenderArgs<
     TFusion extends Fusion = Fusion,
     TManifest extends AppManifest = AppManifest
 > = { fusion: TFusion; env: TManifest };
+
 export type ComponentRenderer<
     TFusion extends Fusion = Fusion,
     TManifest extends AppManifest = AppManifest
-> = (
-    args: ComponentRenderArgs<TFusion, TManifest>
-) => React.LazyExoticComponent<React.ComponentType>;
+> = (fusion: TFusion, env: TManifest) => React.LazyExoticComponent<React.ComponentType>;
 
 /**
  * Creates an lazy loading Component which configures modules
@@ -85,9 +84,9 @@ export const createComponent =
         Component: React.ComponentType,
         configure?: AppModuleInitiator<TModules, TRef, TManifest>
     ): ComponentRenderer<TRef, TManifest> =>
-    ({ fusion, env }) =>
+    (fusion, env) =>
         lazy(async () => {
-            const init = initAppModules(configure);
+            const init = configureModules<TModules, TRef, TManifest>(configure);
             const modules = (await init({
                 fusion,
                 manifest: env,
