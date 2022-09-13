@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@1.0.1...@equinor/fusion-framework-module-app@1.0.2) (2022-09-13)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## [1.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@1.0.1-next.1...@equinor/fusion-framework-module-app@1.0.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## [1.0.1-next.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@1.0.1-next.0...@equinor/fusion-framework-module-app@1.0.1-next.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## [1.0.1-next.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@1.0.0...@equinor/fusion-framework-module-app@1.0.1-next.0) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## 1.0.0 (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## [1.0.0-alpha.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@0.1.17...@equinor/fusion-framework-module-app@1.0.0-alpha.0) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## 0.1.17 (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
+## 0.1.16 (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
+
+
+
+
 ## 0.1.15 (2022-08-19)
 
 **Note:** Version bump only for package @equinor/fusion-framework-module-app

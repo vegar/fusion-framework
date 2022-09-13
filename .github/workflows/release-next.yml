@@ -1,23 +1,23 @@
-name: Pre-release
+name: Release NEXT
 
-on: 
+on:
   workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Realse tag (PR)'     
-        required: true
+  push:
+    branches:
+      - next
+    paths:
+      - 'packages/**'
 
 jobs:
-  publish:
-    name: Publish to PR
+  pre-release-pkg:
+    name: Create pre-release
     runs-on: ubuntu-latest
     steps:
-
-      - name: Checkout project
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
+          ref: next
           fetch-depth: 0
-
+      
       - name: Setup node
         uses: actions/setup-node@v2
         with:
@@ -39,21 +39,12 @@ jobs:
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
       - name: Bump versions (pre-release)
-        run: npx lerna version --yes --conventional-prerelease --no-changelog --no-git-tag-version --preid ${{ github.event.inputs.tag }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-
-      - name: Commit changes
-        run: |
-            git add packages/*/package.json 
-            git commit -m'chore(prerelease): bumped version with tag ${{ github.event.inputs.tag }}'
-            git push
+        run: npx lerna version --yes --preid next --conventional-prerelease --create-release github
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
 
       - name: Release packages
-        run: npx lerna publish from-package --yes --dist-tag ${{ github.event.inputs.tag }}
+        run: npx lerna publish from-package --yes --pre-dist-tag next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
-      

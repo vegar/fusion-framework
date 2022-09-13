@@ -1,6 +1,6 @@
 {
   "name": "@equinor/fusion-framework-react",
-  "version": "0.2.19",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/esm/index.js",
   "exports": {
@@ -35,15 +35,15 @@
     "directory": "packages/react"
   },
   "dependencies": {
-    "@equinor/fusion-framework": "^3.0.0",
-    "@equinor/fusion-framework-react-module-http": "^0.0.0"
+    "@equinor/fusion-framework": "^4.0.2",
+    "@equinor/fusion-framework-react-module-http": "^1.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   },
   "peerDependencies": {
     "@types/react": "^16.9.0 || ^17.0.0 || ^18.0.0",

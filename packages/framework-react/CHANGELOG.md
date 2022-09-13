@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.0.1...@equinor/fusion-framework-react@1.0.2) (2022-09-13)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## [1.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.0.1-next.1...@equinor/fusion-framework-react@1.0.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## [1.0.1-next.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.0.1-next.0...@equinor/fusion-framework-react@1.0.1-next.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## [1.0.1-next.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.0.0...@equinor/fusion-framework-react@1.0.1-next.0) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## 1.0.0 (2022-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **framework-react:** config is now object
+
+### Features
+
+* **framework-react:** update init ([f3e6e2b](https://github.com/equinor/fusion-framework/commit/f3e6e2ba7058b4b515ff0838516fe44705bfdf5c))
+
+
+
+## [1.0.0-alpha.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@0.3.3...@equinor/fusion-framework-react@1.0.0-alpha.0) (2022-09-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **framework-react:** config is now object
+
+### Features
+
+* **framework-react:** update init ([f3e6e2b](https://github.com/equinor/fusion-framework/commit/f3e6e2ba7058b4b515ff0838516fe44705bfdf5c))
+
+
+
+## [0.3.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@0.3.2...@equinor/fusion-framework-react@0.3.3) (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## [0.3.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@0.3.1...@equinor/fusion-framework-react@0.3.2) (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## 0.3.1 (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+
+
+
+
+## 0.3.0 (2022-09-05)
+
+
+### Features
+
+* **framework-react:** expose rect module http ([f6ab26f](https://github.com/equinor/fusion-framework/commit/f6ab26f2c4463ce9d0996027a48eb5ad9d94779a))
+
+
+
 ## [0.2.19](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@0.2.18...@equinor/fusion-framework-react@0.2.19) (2022-08-29)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react

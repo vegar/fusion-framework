@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-telemetry@1.0.1...@equinor/fusion-framework-module-telemetry@1.0.2) (2022-09-13)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## [1.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-telemetry@1.0.1-next.1...@equinor/fusion-framework-module-telemetry@1.0.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## [1.0.1-next.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-telemetry@1.0.1-next.0...@equinor/fusion-framework-module-telemetry@1.0.1-next.1) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## [1.0.1-next.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-telemetry@1.0.0...@equinor/fusion-framework-module-telemetry@1.0.1-next.0) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## 1.0.0 (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## [1.0.0-alpha.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-telemetry@0.3.5...@equinor/fusion-framework-module-telemetry@1.0.0-alpha.0) (2022-09-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## 0.3.5 (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
+## 0.3.4 (2022-09-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+
+
+
+
 ## 0.3.3 (2022-08-29)
 
 **Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
