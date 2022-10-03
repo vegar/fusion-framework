@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.6...@equinor/fusion-framework-test-app@1.2.7) (2022-09-30)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.5...@equinor/fusion-framework-test-app@1.2.6) (2022-09-29)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.4...@equinor/fusion-framework-test-app@1.2.5) (2022-09-29)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.3...@equinor/fusion-framework-test-app@1.2.4) (2022-09-27)
+
+
+### Bug Fixes
+
+* update registering of configuration ([20942ce](https://github.com/equinor/fusion-framework/commit/20942ce1c7a853ea3b55c031a242646e378db8c9))
+
+
+
+## [1.2.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.2...@equinor/fusion-framework-test-app@1.2.3) (2022-09-26)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.1...@equinor/fusion-framework-test-app@1.2.2) (2022-09-26)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.2.0...@equinor/fusion-framework-test-app@1.2.1) (2022-09-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+
+
+
+
+## [1.2.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.1.4...@equinor/fusion-framework-test-app@1.2.0) (2022-09-16)
+
+
+### Features
+
+* **test-app:** use vite as builder ([5d27948](https://github.com/equinor/fusion-framework/commit/5d27948ca9fcd31f0acb454f95aed7c404d2c95d))
+
+
+
 ## [1.1.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.1.3...@equinor/fusion-framework-test-app@1.1.4) (2022-09-16)
 
 **Note:** Version bump only for package @equinor/fusion-framework-test-app

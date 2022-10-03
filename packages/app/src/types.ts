@@ -14,7 +14,6 @@ import {
     HttpModule,
 } from '@equinor/fusion-framework-module-http';
 import type { MsalModule, configureMsal } from '@equinor/fusion-framework-module-msal';
-import type { IServiceDiscoveryProvider } from '@equinor/fusion-framework-module-service-discovery';
 
 export interface IAppConfigurator<
     TModules extends Array<AnyModule> | unknown = unknown,
@@ -25,10 +24,7 @@ export interface IAppConfigurator<
     configureHttpClient(...args: Parameters<typeof configureHttpClient>): void;
 
     configureMsal(...args: Parameters<typeof configureMsal>): void;
-    useFrameworkServiceClient<T extends Fusion = Fusion>(
-        fusion: T,
-        serviceName: Parameters<IServiceDiscoveryProvider['configureClient']>[1]
-    ): ReturnType<IServiceDiscoveryProvider['configureClient']>;
+    useFrameworkServiceClient(serviceName: string): void;
 }
 
 // TODO
@@ -45,16 +41,16 @@ export type AppModulesInstance<TModules extends Array<AnyModule> | unknown = unk
 
 export type AppModuleInitiator<
     TModules extends Array<AnyModule> | unknown = unknown,
-    TRef = Fusion,
+    TRef extends Fusion = Fusion,
     TManifest = AppManifest
 > = (
-    configurator: IAppConfigurator<TModules>,
+    configurator: IAppConfigurator<TModules, TRef['modules']>,
     args: { fusion: TRef; manifest: TManifest }
 ) => void | Promise<void>;
 
 export type AppModuleInit<
     TModules extends Array<AnyModule> | unknown,
-    TRef = Fusion,
+    TRef extends Fusion = Fusion,
     TManifest = AppManifest
 > = (
     cb: AppModuleInitiator<TModules, TRef, TManifest>
