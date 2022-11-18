@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.4.1 (2022-11-14)
+
+### Bug Fixes
+
+-   **observable:** skip error handling on cache subscription ([b3c8102](https://github.com/equinor/fusion-framework/commit/b3c81027dade03e5fb73680ee419200c6f3d0ba4))
+
+## 1.4.0 (2022-11-14)
+
+### Features
+
+-   **observable:** update queue system ([bda336c](https://github.com/equinor/fusion-framework/commit/bda336cf40e131866c5dcc48c93d8349c7e77063))
+
+## 1.3.1 (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-observable
+
+## 1.3.0 (2022-11-01)
+
+### Features
+
+-   **observable:** allow cancellation of transaction ([9615ee1](https://github.com/equinor/fusion-framework/commit/9615ee1315f0ae44cc0246b4efa48be87512536e))
+-   **observable:** create query value selector ([3bfcdc3](https://github.com/equinor/fusion-framework/commit/3bfcdc3070c926d9c12cb701acdf2098da078717))
+
 ## [1.2.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-observable@1.2.0...@equinor/fusion-observable@1.2.1) (2022-10-27)
 
 **Note:** Version bump only for package @equinor/fusion-observable

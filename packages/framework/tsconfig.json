@@ -21,6 +21,15 @@
     },
     {
       "path": "../module-service-discovery"
+    },
+    {
+      "path": "../module-services"
+    },
+    {
+      "path": "../module-context"
+    },
+    {
+      "path": "../module-app"
     }
   ],
   "include": [

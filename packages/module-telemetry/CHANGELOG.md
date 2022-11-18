@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.19 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+## 1.0.18 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+## 1.0.17 (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+## 1.0.16 (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
+## 1.0.15 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-telemetry
+
 ## 1.0.14 (2022-10-27)
 
 **Note:** Version bump only for package @equinor/fusion-framework-module-telemetry

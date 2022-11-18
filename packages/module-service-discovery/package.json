@@ -1,6 +1,6 @@
 {
     "name": "@equinor/fusion-framework-module-service-discovery",
-    "version": "3.0.6",
+    "version": "3.1.1",
     "description": "",
     "main": "dist/esm/index.js",
     "exports": {
@@ -8,8 +8,8 @@
     },
     "types": "dist/types/index.d.ts",
     "scripts": {
-        "build": "npm run build:typescript",
-        "build:typescript": "tsc -b --verbose"
+        "build": "tsc -b",
+        "prepack": "yarn build"
     },
     "keywords": [],
     "author": "",
@@ -23,8 +23,10 @@
         "directory": "packages/framework"
     },
     "dependencies": {
-        "@equinor/fusion-framework-module": "^1.2.6",
-        "@equinor/fusion-framework-module-http": "^2.0.14"
+        "@equinor/fusion-framework-module": "^1.2.9",
+        "@equinor/fusion-framework-module-http": "^2.1.4",
+        "@equinor/fusion-observable": "^1.4.1",
+        "rxjs": "^7.5.7"
     },
     "devDependencies": {
         "typescript": "^4.8.4"

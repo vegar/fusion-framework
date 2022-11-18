@@ -1,1 +1,6 @@
-export { default, Query, QueryCtorOptions, QueryOptions } from './Query';
+export * from './types';
+export * as operators from './operators';
+
+export { default, Query, QueryCtorOptions } from './Query';
+
+

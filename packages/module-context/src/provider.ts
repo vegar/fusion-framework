@@ -1,3 +1,6 @@
+import { lastValueFrom, Observable, Subscription } from 'rxjs';
+import { map, pairwise } from 'rxjs/operators';
+
 import { IContextModuleConfig } from './configurator';
 
 import { ContextClient } from './client/ContextClient';
@@ -19,11 +22,21 @@ export interface IContextProvider {
     readonly contextClient: ContextClient;
     /** DANGER */
     readonly queryClient: Query<ContextItem[], QueryContextParameters>;
+
+    readonly currentContext$: Observable<ContextItem | undefined>;
+    currentContext: ContextItem | undefined;
 }
 
 export class ContextProvider implements IContextProvider {
     #contextClient: ContextClient;
-    #contextQuery: Query<ContextItem[], QueryContextParameters>;
+    #contextQuery: Query<Array<ContextItem>, QueryContextParameters>;
+
+    #event?: ModuleType<EventModule>;
+
+    #subscriptions = new Subscription();
+
+    #contextType?: IContextModuleConfig['contextType'];
+    #contextFilter: IContextModuleConfig['contextFilter'];
 
     public get contextClient() {
         return this.#contextClient;
@@ -33,29 +46,104 @@ export class ContextProvider implements IContextProvider {
         return this.#contextQuery;
     }
 
+    public queryContext(search: string): Observable<Array<ContextItem>> {
+        const query$ = this.queryClient
+            .query({
+                search,
+                filter: {
+                    type: this.#contextType,
+                },
+            })
+            .pipe(map((x) => x.value));
+
+        return this.#contextFilter ? query$.pipe(map(this.#contextFilter)) : query$;
+    }
+
+    public queryContextAsync(search: string): Promise<Array<ContextItem>> {
+        return lastValueFrom(this.queryContext(search));
+    }
+
+    get currentContext$(): Observable<ContextItem | undefined> {
+        return this.#contextClient.currentContext$;
+    }
+
     get currentContext(): ContextItem | undefined {
         return this.#contextClient.currentContext;
     }
 
     set currentContext(context: ContextItem | undefined) {
-        this.#contextClient.setCurrentContext(context);
+        if (this.#event) {
+            /** notify listeners that context is about to change */
+            this.#event
+                .dispatchEvent('onCurrentContextChange', {
+                    source: this,
+                    canBubble: true,
+                    cancelable: true,
+                    detail: { context },
+                })
+                .then((e) => {
+                    /** check if setting context was prevented by listener */
+                    if (!e.canceled) {
+                        this.#contextClient.setCurrentContext(context);
+                    }
+                });
+        } else {
+            this.#contextClient.setCurrentContext(context);
+        }
     }
 
-    constructor(args: { config: IContextModuleConfig; event?: ModuleType<EventModule> }) {
-        const { config, event } = args;
+    constructor(args: {
+        config: IContextModuleConfig;
+        event?: ModuleType<EventModule>;
+        parentContext?: IContextProvider;
+    }) {
+        const { config, event, parentContext } = args;
+
+        this.#contextType = config.contextType;
+        this.#contextFilter = config.contextFilter;
+
         this.#contextClient = new ContextClient(config.getContext);
 
         this.#contextQuery = new Query(config.queryContext);
 
         if (event) {
+            this.#event = event;
+
             /** this might be moved to client, to await prevention of event */
-            this.#contextClient.currentContext$.subscribe((context) => {
-                event.dispatchEvent('onCurrentContextChange', {
-                    canBubble: true,
-                    detail: { context },
-                });
-            });
+            this.#subscriptions.add(
+                this.#contextClient.currentContext$
+                    .pipe(pairwise())
+                    .subscribe(([previous, next]) => {
+                        event.dispatchEvent('onCurrentContextChanged', {
+                            source: this,
+                            canBubble: true,
+                            detail: { previous, next },
+                        });
+                    })
+            );
+
+            this.#subscriptions.add(
+                /** observe event from child modules */
+                event.addEventListener('onCurrentContextChanged', (e) => {
+                    /** loop prevention */
+                    if (e.source !== this) {
+                        this.currentContext = e.detail.next;
+                    }
+                })
+            );
         }
+
+        if (parentContext) {
+            this.#subscriptions.add(
+                parentContext.contextClient.currentContext$.subscribe(
+                    (next) => (this.currentContext = next)
+                )
+            );
+        }
+    }
+
+    dispose() {
+        this.#subscriptions.unsubscribe();
     }
 }
 
@@ -63,10 +151,24 @@ export default ContextProvider;
 
 declare module '@equinor/fusion-framework-module-event' {
     interface FrameworkEventMap {
+        /** dispatch before context changes */
         onCurrentContextChange: FrameworkEvent<
-            FrameworkEventInit<{
-                context: ContextItem | undefined;
-            }>
+            FrameworkEventInit<
+                {
+                    context: ContextItem | undefined;
+                },
+                IContextProvider
+            >
+        >;
+        /** dispatch after context changed */
+        onCurrentContextChanged: FrameworkEvent<
+            FrameworkEventInit<
+                {
+                    next: ContextItem | undefined;
+                    previous: ContextItem | undefined;
+                },
+                IContextProvider
+            >
         >;
     }
 }

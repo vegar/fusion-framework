@@ -1,12 +1,14 @@
 import { createBrowserRouter, Outlet, Link } from 'react-router-dom';
 
 import { Main } from './pages/Main';
-import { AppList } from './pages/AppList';
+import AppPage from './pages/Apps';
 import GetBookmark from './pages/service-bookmarks/GetBookmark';
 import GetContext from './pages/context/GetContext';
 import QueryContext from './pages/context/QueryContext';
 import ServiceGetContext from './pages/service-context/GetContext';
 import ServiceQueryContext from './pages/service-context/QueryContext';
+import { PostBookmark } from './pages/service-bookmarks/PostBookmark';
+import DeleteBookmark from './pages/service-bookmarks/DeleteBookmark';
 
 export const createRoutes = (basename?: string) =>
     createBrowserRouter(
@@ -14,14 +16,14 @@ export const createRoutes = (basename?: string) =>
             {
                 path: '/',
                 element: (
-                    <div style={{ display: 'grid', gridTemplateColumns: '200px auto' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '20vw 80vw' }}>
                         <div style={{ border: '1px solid #333', padding: 10 }}>
                             <ul>
                                 <li>
                                     <Link to="/">home</Link>
                                 </li>
                                 <li>
-                                    <Link to="/app-list">app list</Link>
+                                    <Link to="/app">app</Link>
                                 </li>
                                 <li>
                                     <Link to="/context/get">context/get</Link>
@@ -38,6 +40,9 @@ export const createRoutes = (basename?: string) =>
                                 <li>
                                     <Link to="/service/bookmarks/get">service/bookmarks/get</Link>
                                 </li>
+                                <li>
+                                    <Link to="/service/bookmarks/post">service/bookmarks/post</Link>
+                                </li>
                             </ul>
                         </div>
                         <div style={{ padding: 10 }}>
@@ -48,8 +53,8 @@ export const createRoutes = (basename?: string) =>
                 children: [
                     { index: true, element: <Main /> },
                     {
-                        path: '/app-list',
-                        element: <AppList />,
+                        path: '/app',
+                        element: <AppPage />,
                     },
                     {
                         path: '/context/get',
@@ -70,6 +75,14 @@ export const createRoutes = (basename?: string) =>
                     {
                         path: '/service/bookmarks/get',
                         element: <GetBookmark />,
+                    },
+                    {
+                        path: '/service/bookmarks/post',
+                        element: <PostBookmark />,
+                    },
+                    {
+                        path: '/service/bookmarks/delete',
+                        element: <DeleteBookmark />,
                     },
                 ],
             },

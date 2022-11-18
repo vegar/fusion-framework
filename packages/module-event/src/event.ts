@@ -20,7 +20,7 @@ export interface IFrameworkEvent<
     readonly created: number;
 
     /** payload of event */
-    readonly detail?: FrameworkEventInitDetail<TInit>;
+    readonly detail: FrameworkEventInitDetail<TInit>;
 
     /** source of event (dispatcher) */
     readonly source?: FrameworkEventInitSource<TInit>;
@@ -32,7 +32,7 @@ export interface IFrameworkEvent<
 
 /** initial args of event  */
 export type FrameworkEventInit<TDetail = unknown, TSource = unknown> = {
-    detail?: TDetail;
+    detail: TDetail;
     source?: TSource;
     cancelable?: boolean;
     created?: number;
@@ -49,7 +49,9 @@ export type FrameworkEventType<T> = T extends IFrameworkEvent<FrameworkEventInit
 
 export type FrameworkEventInitDetail<T> = T extends FrameworkEventInit<infer U> ? U : never;
 
-export type FrameworkEventInitSource<T> = T extends FrameworkEventInit<infer U> ? U : never;
+export type FrameworkEventInitSource<T> = T extends FrameworkEventInit<unknown, infer U>
+    ? U
+    : never;
 
 /** defer detail type of event */
 export type FrameworkEventDetail<T> = T extends IFrameworkEvent<infer U>
@@ -79,7 +81,7 @@ export class FrameworkEvent<
     TType extends string = keyof FrameworkEventMap
 > implements IFrameworkEvent<TInit, TType>
 {
-    #detail?: FrameworkEventInitDetail<TInit>;
+    #detail: FrameworkEventInitDetail<TInit>;
     #source?: FrameworkEventInitSource<TInit>;
     #canceled = false;
     #cancelable: boolean;
@@ -110,7 +112,7 @@ export class FrameworkEvent<
         return this.#canceled;
     }
 
-    public get detail(): FrameworkEventInitDetail<TInit> | undefined {
+    public get detail(): FrameworkEventInitDetail<TInit> {
         return this.#detail;
     }
 

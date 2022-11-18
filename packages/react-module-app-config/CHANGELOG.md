@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.0 (2022-11-17)
+
+### Features
+
+-   update typing of useModule hook ([958dd04](https://github.com/equinor/fusion-framework/commit/958dd0401667e9ebb1a51bced128ae43369cd6c4))
+
+## 1.1.7 (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## [1.1.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-app-config@1.1.5...@equinor/fusion-framework-react-module-app-config@1.1.6) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## [1.1.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-app-config@1.1.4...@equinor/fusion-framework-react-module-app-config@1.1.5) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## 1.1.4 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## 1.1.3 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## 1.1.2 (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## [1.1.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-app-config@1.1.0...@equinor/fusion-framework-react-module-app-config@1.1.1) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## 1.1.0 (2022-11-02)
+
+### Features
+
+-   deprecate app-config ([1f24abc](https://github.com/equinor/fusion-framework/commit/1f24abc5125b0526c64973fe0b063a9c33d532b0))
+
+## [1.0.17](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-app-config@1.0.16...@equinor/fusion-framework-react-module-app-config@1.0.17) (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
+## 1.0.16 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-app-config
+
 ## 1.0.15 (2022-10-27)
 
 ### Bug Fixes

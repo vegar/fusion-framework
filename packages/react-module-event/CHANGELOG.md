@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 (2022-11-17)
+
+### Features
+
+-   update typing of useModule hook ([958dd04](https://github.com/equinor/fusion-framework/commit/958dd0401667e9ebb1a51bced128ae43369cd6c4))
+
+## 1.0.19 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
+## 1.0.18 (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
+## [1.0.17](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-event@1.0.16...@equinor/fusion-framework-react-module-event@1.0.17) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
+## 1.0.16 (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
+## [1.0.15](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-event@1.0.14...@equinor/fusion-framework-react-module-event@1.0.15) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
+## 1.0.14 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-event
+
 ## 1.0.13 (2022-10-27)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react-module-event

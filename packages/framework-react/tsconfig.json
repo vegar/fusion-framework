@@ -10,6 +10,21 @@
   "references": [
     {
       "path": "../framework"
+    },
+    {
+      "path": "../module-app"
+    },
+    {
+      "path": "../module-context"
+    },
+    {
+      "path": "../react-module-context"
+    },
+    {
+      "path": "../react-module-http"
+    },
+    {
+      "path": "../module-service-discovery"
     }
   ],
   "include": [

@@ -3,6 +3,95 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.16](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.15...@equinor/fusion-framework-react@1.3.16) (2022-11-18)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.15](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.14...@equinor/fusion-framework-react@1.3.15) (2022-11-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## 1.3.14 (2022-11-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.13](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.12...@equinor/fusion-framework-react@1.3.13) (2022-11-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.12](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.11...@equinor/fusion-framework-react@1.3.12) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## 1.3.11 (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.10](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.9...@equinor/fusion-framework-react@1.3.10) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.8...@equinor/fusion-framework-react@1.3.9) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.7...@equinor/fusion-framework-react@1.3.8) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## 1.3.7 (2022-11-11)
+
+### Bug Fixes
+
+-   **module-auth:** make http module await auth ([18a0ed9](https://github.com/equinor/fusion-framework/commit/18a0ed947e128bf1cdc86aa45d31e73c1f8c4bbb))
+
+## 1.3.6 (2022-11-03)
+
+### Bug Fixes
+
+-   deprecate useFramework from hooks ([d3d9b24](https://github.com/equinor/fusion-framework/commit/d3d9b24fe56937e2c9feba7de4228d8eb1cbbec5))
+
+## [1.3.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.4...@equinor/fusion-framework-react@1.3.5) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.3...@equinor/fusion-framework-react@1.3.4) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.2...@equinor/fusion-framework-react@1.3.3) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.1...@equinor/fusion-framework-react@1.3.2) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.3.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.3.0...@equinor/fusion-framework-react@1.3.1) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## 1.3.0 (2022-11-02)
+
+### Features
+
+-   **framework-react:** create hook for current context ([4ee803f](https://github.com/equinor/fusion-framework/commit/4ee803fd0e457c3ec7414b35100e12186327fb6f))
+-   **framework-react:** react tooling for context ([b530114](https://github.com/equinor/fusion-framework/commit/b53011475a9c1a25b4e0756b66b57fd9b5711bbd))
+
+## [1.2.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.2.0...@equinor/fusion-framework-react@1.2.1) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [1.2.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.1.1...@equinor/fusion-framework-react@1.2.0) (2022-11-01)
+
+### Features
+
+-   **framework-react:** expose app hooks ([46c1ea2](https://github.com/equinor/fusion-framework/commit/46c1ea28f88cb3dd0ff350a589850c5cd9a45a88))
+
+## 1.1.1 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
 ## [1.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@1.0.17...@equinor/fusion-framework-react@1.1.0) (2022-10-27)
 
 ### Features

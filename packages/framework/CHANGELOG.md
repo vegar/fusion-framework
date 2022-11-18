@@ -3,6 +3,88 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.4.1...@equinor/fusion-framework@4.4.2) (2022-11-18)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.4.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.4.0...@equinor/fusion-framework@4.4.1) (2022-11-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## 4.4.0 (2022-11-17)
+
+### Features
+
+-   update typing of useModule hook ([958dd04](https://github.com/equinor/fusion-framework/commit/958dd0401667e9ebb1a51bced128ae43369cd6c4))
+
+## [4.3.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.3.7...@equinor/fusion-framework@4.3.8) (2022-11-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.3.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.3.6...@equinor/fusion-framework@4.3.7) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## 4.3.6 (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.3.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.3.4...@equinor/fusion-framework@4.3.5) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.3.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.3.3...@equinor/fusion-framework@4.3.4) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.3.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.3.2...@equinor/fusion-framework@4.3.3) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## 4.3.2 (2022-11-11)
+
+### Bug Fixes
+
+-   **module-auth:** make http module await auth ([18a0ed9](https://github.com/equinor/fusion-framework/commit/18a0ed947e128bf1cdc86aa45d31e73c1f8c4bbb))
+
+## 4.3.1 (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.3.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.2.2...@equinor/fusion-framework@4.3.0) (2022-11-03)
+
+### Features
+
+-   **cli:** initial commit ([#380](https://github.com/equinor/fusion-framework/issues/380)) ([775b74f](https://github.com/equinor/fusion-framework/commit/775b74f5cc8507cf5449a9f91e018d80a4ab50a1))
+
+## [4.2.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.2.1...@equinor/fusion-framework@4.2.2) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.2.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.2.0...@equinor/fusion-framework@4.2.1) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## 4.2.0 (2022-11-02)
+
+### Features
+
+-   **framework:** enable context for framework ([647a1c5](https://github.com/equinor/fusion-framework/commit/647a1c5b52ed4c721e1379e7c2395ca7ff752a40))
+
+## [4.1.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.1.0...@equinor/fusion-framework@4.1.1) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
+## [4.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework@4.0.17...@equinor/fusion-framework@4.1.0) (2022-11-01)
+
+### Features
+
+-   **framework:** implement module-app ([dc917f0](https://github.com/equinor/fusion-framework/commit/dc917f019da852fbd93eaf6ed7bc4a3a7e6f0d68))
+
+## 4.0.17 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework
+
 ## 4.0.16 (2022-10-27)
 
 **Note:** Version bump only for package @equinor/fusion-framework

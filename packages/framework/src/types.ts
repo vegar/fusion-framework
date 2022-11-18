@@ -1,29 +1,35 @@
-import type { ModulesInstance } from '@equinor/fusion-framework-module';
+import type { CombinedModules, ModulesInstance } from '@equinor/fusion-framework-module';
 import type { AnyModule } from '@equinor/fusion-framework-module';
 
+import { AppModule } from '@equinor/fusion-framework-module-app';
+import { ContextModule } from '@equinor/fusion-framework-module-context';
 import { EventModule } from '@equinor/fusion-framework-module-event';
 import { HttpModule } from '@equinor/fusion-framework-module-http';
 import { MsalModule } from '@equinor/fusion-framework-module-msal';
 import { ServiceDiscoveryModule } from '@equinor/fusion-framework-module-service-discovery';
+import { ServicesModule } from '@equinor/fusion-framework-module-services';
 
-export type FusionModules<TModules extends Array<AnyModule> = []> = [
-    ...TModules,
-    EventModule,
-    HttpModule,
-    MsalModule,
-    ServiceDiscoveryModule
-];
-
-export type FusionModulesInstance<TModules extends Array<AnyModule> = []> = ModulesInstance<
-    FusionModules<TModules>
+export type FusionModules<TModules extends Array<AnyModule> | unknown = unknown> = CombinedModules<
+    TModules,
+    [
+        AppModule,
+        ContextModule,
+        EventModule,
+        HttpModule,
+        MsalModule,
+        ServicesModule,
+        ServiceDiscoveryModule
+    ]
 >;
 
-export interface Fusion<TModules extends Array<AnyModule> = []> {
+export type FusionModulesInstance<TModules extends Array<AnyModule> | unknown = unknown> =
+    ModulesInstance<FusionModules<TModules>>;
+
+export interface Fusion<TModules extends Array<AnyModule> | unknown = unknown> {
     /**
      * Configured services for Fusion
      */
     modules: FusionModulesInstance<TModules>;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface AppManifest {}
+export { AppManifest, AppConfig } from '@equinor/fusion-framework-module-app';

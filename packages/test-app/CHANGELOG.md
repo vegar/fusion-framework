@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.9.6...@equinor/fusion-framework-test-app@1.9.7) (2022-11-18)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.9.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.9.5...@equinor/fusion-framework-test-app@1.9.6) (2022-11-18)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.9.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.9.4...@equinor/fusion-framework-test-app@1.9.5) (2022-11-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 1.9.4 (2022-11-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.9.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.9.2...@equinor/fusion-framework-test-app@1.9.3) (2022-11-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.9.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.9.1...@equinor/fusion-framework-test-app@1.9.2) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 1.9.1 (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.9.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.14...@equinor/fusion-framework-test-app@1.9.0) (2022-11-14)
+
+### Features
+
+-   update packages to use observable ([98024aa](https://github.com/equinor/fusion-framework/commit/98024aa466c68f03bd793bd564cf7b6bf65def72))
+
+## [1.8.14](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.13...@equinor/fusion-framework-test-app@1.8.14) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.13](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.12...@equinor/fusion-framework-test-app@1.8.13) (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 1.8.12 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.10...@equinor/fusion-framework-test-app@1.8.11) (2022-11-07)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 1.8.10 (2022-11-03)
+
+### Bug Fixes
+
+-   deprecate useFramework from hooks ([d3d9b24](https://github.com/equinor/fusion-framework/commit/d3d9b24fe56937e2c9feba7de4228d8eb1cbbec5))
+
+## [1.8.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.8...@equinor/fusion-framework-test-app@1.8.9) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.7...@equinor/fusion-framework-test-app@1.8.8) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.6...@equinor/fusion-framework-test-app@1.8.7) (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.5...@equinor/fusion-framework-test-app@1.8.6) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.4...@equinor/fusion-framework-test-app@1.8.5) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.3...@equinor/fusion-framework-test-app@1.8.4) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.2...@equinor/fusion-framework-test-app@1.8.3) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.1...@equinor/fusion-framework-test-app@1.8.2) (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.8.0...@equinor/fusion-framework-test-app@1.8.1) (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [1.8.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.7.0...@equinor/fusion-framework-test-app@1.8.0) (2022-11-01)
+
+### Features
+
+-   :sparkles: delete bookmark ([df70d9f](https://github.com/equinor/fusion-framework/commit/df70d9f6ed369cfc9e682a268b7175ddf8b3d122))
+
+## [1.7.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.6.0...@equinor/fusion-framework-test-app@1.7.0) (2022-11-01)
+
+### Features
+
+-   :sparkles: post bookmark module-services ([333ec6a](https://github.com/equinor/fusion-framework/commit/333ec6ab394f305aa02678d93a513ecf67fd52bc))
+
 ## [1.6.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@1.5.1...@equinor/fusion-framework-test-app@1.6.0) (2022-10-27)
 
 ### Features

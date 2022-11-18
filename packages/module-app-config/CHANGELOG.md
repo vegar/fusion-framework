@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.6 (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## [1.1.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app-config@1.1.4...@equinor/fusion-framework-module-app-config@1.1.5) (2022-11-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## 1.1.4 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## 1.1.3 (2022-11-11)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## 1.1.2 (2022-11-03)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## 1.1.1 (2022-11-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
+## [1.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app-config@1.0.16...@equinor/fusion-framework-module-app-config@1.1.0) (2022-11-01)
+
+### Features
+
+-   **module-app-config:** deprecate module ([426776e](https://github.com/equinor/fusion-framework/commit/426776e18b4d53c0014cdd6442313e9b1787d263))
+
+## 1.0.16 (2022-11-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app-config
+
 ## 1.0.15 (2022-10-27)
 
 **Note:** Version bump only for package @equinor/fusion-framework-module-app-config

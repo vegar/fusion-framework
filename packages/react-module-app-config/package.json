@@ -1,6 +1,6 @@
 {
     "name": "@equinor/fusion-framework-react-module-app-config",
-    "version": "1.0.15",
+    "version": "1.2.0",
     "description": "",
     "main": "dist/esm/index.js",
     "exports": {
@@ -8,8 +8,8 @@
     },
     "types": "./dist/types/index.d.ts",
     "scripts": {
-        "build": "npm run build:typescript",
-        "build:typescript": "tsc -b --verbose"
+        "build": "tsc -b",
+        "prepack": "yarn build"
     },
     "keywords": [],
     "author": "",
@@ -23,9 +23,9 @@
         "directory": "packages/react-modules"
     },
     "dependencies": {
-        "@equinor/fusion-framework-module-app-config": "^1.0.15",
-        "@equinor/fusion-framework-react-module": "^0.2.0",
-        "@equinor/fusion-observable": "^1.2.1"
+        "@equinor/fusion-framework-module-app-config": "^1.1.6",
+        "@equinor/fusion-framework-react-module": "^1.1.0",
+        "@equinor/fusion-observable": "^1.4.1"
     },
     "devDependencies": {
         "@types/react": "^17.0.11",

@@ -1,6 +1,6 @@
 {
     "name": "@equinor/fusion-framework-module",
-    "version": "1.2.6",
+    "version": "1.2.9",
     "description": "",
     "main": "dist/esm/index.js",
     "exports": {
@@ -8,8 +8,8 @@
     },
     "types": "dist/types/index.d.ts",
     "scripts": {
-        "build": "npm run build:typescript",
-        "build:typescript": "tsc -b --verbose"
+        "build": "tsc -b",
+        "prepack": "yarn build"
     },
     "keywords": [],
     "author": "",
