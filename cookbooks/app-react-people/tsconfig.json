@@ -1,25 +1,23 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "bin",
     "rootDir": "src",
-    "declarationDir": "./dist/types",
     "baseUrl": "src",
-    "jsx": "react-jsx"
+    "jsx": "react-jsxdev",
   },
   "references": [
     {
-      "path": "../framework-react"
+      "path": "../../packages/react-app"
     },
     {
-      "path": "../../utils/observable"
-    }
+      "path": "../../packages/cli"
+    },
   ],
   "include": [
-    "src/**/*",
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
     "lib"
-  ],
+  ]
 }

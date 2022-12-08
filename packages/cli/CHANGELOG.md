@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.1.3...@equinor/fusion-framework-cli@1.1.4) (2022-12-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [1.1.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.1.2...@equinor/fusion-framework-cli@1.1.3) (2022-12-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [1.1.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.1.1...@equinor/fusion-framework-cli@1.1.2) (2022-12-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [1.1.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.1.0...@equinor/fusion-framework-cli@1.1.1) (2022-12-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [1.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.0.1...@equinor/fusion-framework-cli@1.1.0) (2022-12-05)
+
+### Features
+
+-   **context-selector:** adds icon to orgchart result items ([90343d9](https://github.com/equinor/fusion-framework/commit/90343d9915cb85eaa9945012c8709a2d40f6f023))
+-   **context-selector:** header type contextselector and appcheck ([8ab0a50](https://github.com/equinor/fusion-framework/commit/8ab0a50e3f7ea3487796735c868f2e65d84fecd2))
+-   **contextselector:** cli context selector ([f414466](https://github.com/equinor/fusion-framework/commit/f4144668e4deee32ed229807d81a0ea08ba5a476))
+-   fusionlogo component ([b02fe16](https://github.com/equinor/fusion-framework/commit/b02fe16d3bb723b13413115826df0bbbc2b46815))
+-   header with contextselector and logo ([174ed3d](https://github.com/equinor/fusion-framework/commit/174ed3d14383b6a813d2264ad5dfd9397fe17185))
+
+### Bug Fixes
+
+-   **app:** adding type contextModule in event details for app package ([abea386](https://github.com/equinor/fusion-framework/commit/abea386c76c6297934a236d1bba9c71a12425065))
+-   **cli:** contextselector improvements and comments ([bf8363e](https://github.com/equinor/fusion-framework/commit/bf8363e86909407632caa5ec46182643cbdd2205))
+-   **cli:** updated dependencie versions ([12cb3c8](https://github.com/equinor/fusion-framework/commit/12cb3c8d56cad82986d910f45ec1933fe43bfd67))
+
+## [1.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.0.1...@equinor/fusion-framework-cli@1.0.2) (2022-12-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [1.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@1.0.0...@equinor/fusion-framework-cli@1.0.1) (2022-12-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
 ## [1.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@0.3.20...@equinor/fusion-framework-cli@1.0.0) (2022-12-02)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cli

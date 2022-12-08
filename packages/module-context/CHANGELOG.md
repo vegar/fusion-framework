@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@1.1.0...@equinor/fusion-framework-module-context@1.1.3) (2022-12-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-context
+
+## [1.1.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@1.1.1...@equinor/fusion-framework-module-context@1.1.2) (2022-12-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-context
+
+## [1.1.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@1.1.0...@equinor/fusion-framework-module-context@1.1.1) (2022-12-05)
+
+### Bug Fixes
+
+-   **module-context:** update ContextItem interface ([7368fb0](https://github.com/equinor/fusion-framework/commit/7368fb08015e07cce54d30109462f36a64188d25))
+
+## 1.1.0 (2022-12-05)
+
+### Features
+
+-   **contextselector:** cli context selector ([f414466](https://github.com/equinor/fusion-framework/commit/f4144668e4deee32ed229807d81a0ea08ba5a476))
+
+## 1.0.1 (2022-12-05)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-context
+
 ## [1.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@0.6.11...@equinor/fusion-framework-module-context@1.0.0) (2022-12-02)
 
 ### Features
