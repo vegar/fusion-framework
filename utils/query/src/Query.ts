@@ -62,7 +62,8 @@ const defaultCacheValidator =
     (entry) =>
         (entry.updated ?? 0) + expires > Date.now();
 
-export class Query<TType, TArgs> {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export class Query<TType, TArgs = any> {
     static extractQueryValue = queryValue;
 
     #subscription = new Subscription();
@@ -121,7 +122,8 @@ export class Query<TType, TArgs> {
                                     task.pipe(catchError(() => EMPTY)).subscribe(subscriber)
                                 );
                                 subscriber.add(() => {
-                                    this.#client.cancel(transaction);
+                                    /** cancel transaction if switched */
+                                    setTimeout(() => this.#client.cancel(transaction));
                                 });
                             })
                     ),

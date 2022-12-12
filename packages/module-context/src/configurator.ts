@@ -13,6 +13,14 @@ export interface ContextModuleConfig {
     };
     contextType?: string[];
     contextFilter?: ContextFilterFn;
+
+    /**
+     * Method for generating context query parameters.
+     */
+    contextParameterFn?: (args: {
+        search: string;
+        type: ContextModuleConfig['contextType'];
+    }) => string | QueryContextParameters;
 }
 
 export interface IContextModuleConfigurator {
@@ -45,8 +53,9 @@ export class ContextModuleConfigurator implements IContextModuleConfigurator {
 
     public async createConfig(
         init: ModuleInitializerArgs<IContextModuleConfigurator, [ServicesModule]>
-    ): Promise<ContextModuleConfig>  {
+    ): Promise<ContextModuleConfig> {
         const config = await this.#configBuilders.reduce(async (cur, cb) => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const builder = new ContextConfigBuilder<any, any>(init, await cur);
             await Promise.resolve(cb(builder));
             return Object.assign(cur, builder.config);

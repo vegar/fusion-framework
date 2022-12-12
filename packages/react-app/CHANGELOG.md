@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.14...@equinor/fusion-framework-react-app@2.0.15) (2022-12-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [2.0.14](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.13...@equinor/fusion-framework-react-app@2.0.14) (2022-12-12)
+
+### Bug Fixes
+
+-   **react-app:** update typing of legacy-app ([d4dbbb0](https://github.com/equinor/fusion-framework/commit/d4dbbb0a326cb6b54bb3a2348fd7961b3abf4ba7))
+
+## [2.0.13](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.12...@equinor/fusion-framework-react-app@2.0.13) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [2.0.12](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.11...@equinor/fusion-framework-react-app@2.0.12) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [2.0.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.10...@equinor/fusion-framework-react-app@2.0.11) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [2.0.10](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.9...@equinor/fusion-framework-react-app@2.0.10) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [2.0.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.8...@equinor/fusion-framework-react-app@2.0.9) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
 ## [2.0.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@2.0.7...@equinor/fusion-framework-react-app@2.0.8) (2022-12-06)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react-app

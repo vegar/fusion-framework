@@ -1,5 +1,5 @@
 import { firstValueFrom, of, Subject } from 'rxjs';
-import { catchError, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { switchMap, takeUntil, tap } from 'rxjs/operators';
 import { fromFetch } from 'rxjs/fetch';
 
 import { HttpRequestHandler, HttpResponseHandler } from '../operators';
@@ -148,7 +148,7 @@ export class HttpClient<TRequest extends FetchRequest = FetchRequest, TResponse 
                         return selector(response);
                     } catch (err) {
                         throw new HttpResponseError(
-                            'failed to parse response',
+                            'failed to execute response selector',
                             response as Response,
                             {
                                 cause: err,

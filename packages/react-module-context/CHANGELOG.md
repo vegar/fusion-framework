@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.12...@equinor/fusion-framework-react-module-context@1.0.13) (2022-12-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.12](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.11...@equinor/fusion-framework-react-module-context@1.0.12) (2022-12-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.10...@equinor/fusion-framework-react-module-context@1.0.11) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.10](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.9...@equinor/fusion-framework-react-module-context@1.0.10) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.8...@equinor/fusion-framework-react-module-context@1.0.9) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.7...@equinor/fusion-framework-react-module-context@1.0.8) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
+## [1.0.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.6...@equinor/fusion-framework-react-module-context@1.0.7) (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-module-context
+
 ## [1.0.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-module-context@1.0.5...@equinor/fusion-framework-react-module-context@1.0.6) (2022-12-06)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react-module-context

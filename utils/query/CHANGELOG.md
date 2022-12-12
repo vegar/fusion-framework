@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-query@1.1.1...@equinor/fusion-query@1.1.2) (2022-12-12)
+
+### Bug Fixes
+
+-   **utils/query:** fix causation of error ([108f1b4](https://github.com/equinor/fusion-framework/commit/108f1b418f0f0b561c9bc3a5a0e41e5e8ad50f2f))
+
+## 1.1.1 (2022-12-08)
+
+### Bug Fixes
+
+-   **utils/query:** debounce cancelation of request ([f280bb8](https://github.com/equinor/fusion-framework/commit/f280bb812384d1c183372f8f68dda1de29995fff))
+
+## [1.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-query@1.0.2...@equinor/fusion-query@1.1.0) (2022-12-08)
+
+### Features
+
+-   **utils/query:** improve error handling ([1cec132](https://github.com/equinor/fusion-framework/commit/1cec132ea022f9fc81464ceb03e5aa4f7e8b4951))
+
+## 1.0.2 (2022-12-08)
+
+**Note:** Version bump only for package @equinor/fusion-query
+
 ## 1.0.1 (2022-12-05)
 
 ### Bug Fixes
