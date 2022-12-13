@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@2.3.0...@equinor/fusion-framework-module-app@2.4.0) (2022-12-12)
+
+### Features
+
+-   **module-app:** allow creating app instance ([d2d3080](https://github.com/equinor/fusion-framework/commit/d2d3080f4822fefca5df5a4a1ce46f138095d567))
+
+## 2.3.0 (2022-12-12)
+
+### Features
+
+-   **module-app:** add config builder ([0fe107c](https://github.com/equinor/fusion-framework/commit/0fe107c87a129c6e63044e6298914cdfc4e0d626))
+
 ## [2.2.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@2.1.6...@equinor/fusion-framework-module-app@2.2.0) (2022-12-12)
 
 ### Features
