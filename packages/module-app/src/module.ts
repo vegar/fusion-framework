@@ -21,7 +21,8 @@ export const module: AppModule = {
     },
 };
 
-export const enableAppModule = (configurator: IModulesConfigurator) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const enableAppModule = (configurator: IModulesConfigurator<any, any>) => {
     configurator.addConfig({ module });
 };
 
