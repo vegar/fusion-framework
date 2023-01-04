@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.1.0 (2023-01-04)
+
+### Features
+
+-   **module-app:** allow clearing current app ([c7f4c14](https://github.com/equinor/fusion-framework/commit/c7f4c144c29c2c40df42eafcdaabfb8214e1e88d))
+
+## 3.0.0 (2023-01-04)
+
+### ⚠ BREAKING CHANGES
+
+-   **module-app:** manifest prop rename
+
+### Bug Fixes
+
+-   **module-app:** rename `appKey` to `key` ([9ee97b1](https://github.com/equinor/fusion-framework/commit/9ee97b149b9167a3747da371de76490e287d9514))
+
+## 2.8.1 (2022-12-21)
+
+### Bug Fixes
+
+-   **module-app:** fix typo ([7db0811](https://github.com/equinor/fusion-framework/commit/7db08113697761ecfa75b5684272e6244ec9e137))
+
+## 2.8.0 (2022-12-21)
+
+### Features
+
+-   **module-app:** expose current state of app ([accb084](https://github.com/equinor/fusion-framework/commit/accb08477416541beaa39574ff966ab2784ad430))
+
+## [2.7.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@2.7.0...@equinor/fusion-framework-module-app@2.7.1) (2022-12-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-module-app
+
 ## [2.7.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-app@2.6.0...@equinor/fusion-framework-module-app@2.7.0) (2022-12-16)
 
 ### Features

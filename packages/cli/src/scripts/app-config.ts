@@ -8,7 +8,7 @@ type SupportedTyped = typeof supportedTypes[number];
 
 type LocalConfig = {
     manifest?: {
-        appKey: string;
+        key: string;
     };
     environment?: Record<string, unknown>;
     endpoints?: Record<string, string>;
@@ -25,7 +25,7 @@ type PackageInfo = {
 };
 
 type AppConfig = {
-    appKey?: string;
+    key?: string;
     environment?: Record<string, unknown>;
     endpoints?: Record<string, string>;
 };
@@ -93,7 +93,7 @@ export const resolveAppConfig = async (): Promise<{
 
     const manifest = Object.assign(
         {
-            appKey: pkg.name.replace(/^@|\w.*\//gm, ''),
+            key: pkg.name.replace(/^@|\w.*\//gm, ''),
         },
         localConfig.manifest,
         {

@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.1.0 (2023-01-04)
+
+### Features
+
+-   **module-app:** allow clearing current app ([c7f4c14](https://github.com/equinor/fusion-framework/commit/c7f4c144c29c2c40df42eafcdaabfb8214e1e88d))
+
+## 2.0.25 (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [2.0.24](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@2.0.23...@equinor/fusion-framework-react@2.0.24) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [2.0.23](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@2.0.22...@equinor/fusion-framework-react@2.0.23) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## 2.0.22 (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
+## [2.0.21](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@2.0.20...@equinor/fusion-framework-react@2.0.21) (2022-12-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react
+
 ## [2.0.20](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react@2.0.19...@equinor/fusion-framework-react@2.0.20) (2022-12-16)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react

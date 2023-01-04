@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.30](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.29...@equinor/fusion-framework-cookbook-app-react-people@1.1.30) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.29](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.28...@equinor/fusion-framework-cookbook-app-react-people@1.1.29) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.28](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.27...@equinor/fusion-framework-cookbook-app-react-people@1.1.28) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.27](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.26...@equinor/fusion-framework-cookbook-app-react-people@1.1.27) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.26](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.25...@equinor/fusion-framework-cookbook-app-react-people@1.1.26) (2022-12-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.25](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.24...@equinor/fusion-framework-cookbook-app-react-people@1.1.25) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.24](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.23...@equinor/fusion-framework-cookbook-app-react-people@1.1.24) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.23](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.22...@equinor/fusion-framework-cookbook-app-react-people@1.1.23) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.22](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.21...@equinor/fusion-framework-cookbook-app-react-people@1.1.22) (2022-12-19)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
+## [1.1.21](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.20...@equinor/fusion-framework-cookbook-app-react-people@1.1.21) (2022-12-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people
+
 ## [1.1.20](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-people@1.1.19...@equinor/fusion-framework-cookbook-app-react-people@1.1.20) (2022-12-16)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-people

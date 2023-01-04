@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.0.1 (2023-01-04)
+
+### Bug Fixes
+
+-   **module-app:** update deps ([3e956c4](https://github.com/equinor/fusion-framework/commit/3e956c4b66b012988e68c2f4633ccdb692dc9bc9))
+
+## 5.0.0 (2023-01-04)
+
+### ⚠ BREAKING CHANGES
+
+-   **module-app:** manifest prop rename
+
+### Bug Fixes
+
+-   **module-app:** rename `appKey` to `key` ([9ee97b1](https://github.com/equinor/fusion-framework/commit/9ee97b149b9167a3747da371de76490e287d9514))
+
+## 4.0.20 (2022-12-21)
+
+### Bug Fixes
+
+-   import export of app types ([6adeabe](https://github.com/equinor/fusion-framework/commit/6adeabecd1d261f3fda18a1cf93e5be4e374cbb5))
+
+## 4.0.19 (2022-12-19)
+
+### Bug Fixes
+
+-   **react-app:** check if manifest is provided in env ([e41b6d1](https://github.com/equinor/fusion-framework/commit/e41b6d1c9006f7d55933a6375861d96126498015))
+
 ## 4.0.18 (2022-12-16)
 
 **Note:** Version bump only for package @equinor/fusion-framework-app

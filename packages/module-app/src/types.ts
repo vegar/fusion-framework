@@ -3,6 +3,7 @@ import type { EventModule } from '@equinor/fusion-framework-module-event';
 import type { HttpModule } from '@equinor/fusion-framework-module-http';
 import { MsalModule } from '@equinor/fusion-framework-module-msal';
 import type { ServiceDiscoveryModule } from '@equinor/fusion-framework-module-service-discovery';
+import App from './app';
 
 // TODO
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -20,6 +21,8 @@ export type ModuleDeps = [HttpModule, ServiceDiscoveryModule, EventModule];
 
 export type AppType = 'standalone' | 'report' | 'launcher';
 
+export type CurrentApp = App | null | undefined;
+
 export type AppAuth = {
     clientId: string;
     resources: string[];
@@ -33,7 +36,7 @@ type AppCategory = {
 };
 
 export type AppManifest = {
-    appKey: string;
+    key: string;
     name: string;
     entry: string;
     version: string;

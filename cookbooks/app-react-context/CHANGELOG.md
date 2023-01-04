@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.28](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.27...@equinor/fusion-framework-cookbook-app-react-context@2.1.28) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.27](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.26...@equinor/fusion-framework-cookbook-app-react-context@2.1.27) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.26](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.25...@equinor/fusion-framework-cookbook-app-react-context@2.1.26) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.25](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.24...@equinor/fusion-framework-cookbook-app-react-context@2.1.25) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.24](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.23...@equinor/fusion-framework-cookbook-app-react-context@2.1.24) (2022-12-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.23](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.22...@equinor/fusion-framework-cookbook-app-react-context@2.1.23) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.22](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.21...@equinor/fusion-framework-cookbook-app-react-context@2.1.22) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.21](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.20...@equinor/fusion-framework-cookbook-app-react-context@2.1.21) (2022-12-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.20](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.19...@equinor/fusion-framework-cookbook-app-react-context@2.1.20) (2022-12-19)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [2.1.19](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.18...@equinor/fusion-framework-cookbook-app-react-context@2.1.19) (2022-12-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
 ## [2.1.18](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@2.1.17...@equinor/fusion-framework-cookbook-app-react-context@2.1.18) (2022-12-16)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
