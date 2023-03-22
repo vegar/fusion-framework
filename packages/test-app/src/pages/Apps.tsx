@@ -11,23 +11,24 @@ export const CurrentApp = () => {
     const framework = useFramework<[AppModule]>();
     const [appKey, setAppKey] = useState('');
 
-    const AppManifest = useObservableState(
+    const { value: AppManifest } = useObservableState(
         useMemo(() => (appKey ? framework.modules.app.getAppManifest(appKey) : EMPTY), [appKey])
     );
-    const appConfig = useObservableState(
+
+    const { value: appConfig } = useObservableState(
         useMemo(() => (appKey ? framework.modules.app.getAppConfig(appKey) : EMPTY), [appKey])
     );
 
-    const apps = useObservableState(
+    const { value: apps } = useObservableState(
         useMemo(() => framework.modules.app.getAllAppManifests(), [framework]),
-        []
+        { initial: [] }
     );
 
     return (
         <div>
             <h2>Current App</h2>
             <select onChange={(e) => setAppKey(e.currentTarget.value)}>
-                {apps.map((app) => {
+                {apps?.map((app) => {
                     const { key: appKey, name } = app;
                     return (
                         <option key={appKey} value={appKey}>

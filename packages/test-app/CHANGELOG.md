@@ -3,6 +3,135 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@6.0.5...@equinor/fusion-framework-test-app@6.0.6) (2023-03-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 6.0.5 (2023-03-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 6.0.4 (2023-03-09)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [6.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@6.0.2...@equinor/fusion-framework-test-app@6.0.3) (2023-03-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [6.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@6.0.1...@equinor/fusion-framework-test-app@6.0.2) (2023-02-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [6.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@6.0.0...@equinor/fusion-framework-test-app@6.0.1) (2023-02-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [6.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@5.0.5...@equinor/fusion-framework-test-app@6.0.0) (2023-02-13)
+
+### ⚠ BREAKING CHANGES
+
+-   **utils/observable:** `useObservableInputState` and `useObservableSelectorState` now return full state, not only value
+
+### Bug Fixes
+
+-   **utils/observable:** rename `next` to `value`from `useObservableState` ([4a08445](https://github.com/equinor/fusion-framework/commit/4a08445645af2488666564c2da716d32aa5e88c0))
+-   **utils/observable:** when subject in useObservableState reset state ([9c5c041](https://github.com/equinor/fusion-framework/commit/9c5c041d3d8c0b01bd507ea7f672711d9f5cb653))
+
+## [5.0.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@5.0.4...@equinor/fusion-framework-test-app@5.0.5) (2023-02-09)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 5.0.4 (2023-02-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [5.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@5.0.2...@equinor/fusion-framework-test-app@5.0.3) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [5.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@5.0.0...@equinor/fusion-framework-test-app@5.0.2) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [5.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@5.0.0...@equinor/fusion-framework-test-app@5.0.1) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 5.0.0 (2023-02-01)
+
+### ⚠ BREAKING CHANGES
+
+-   hook has new return type
+
+### Features
+
+-   useObservableState hook ([e26f2a9](https://github.com/equinor/fusion-framework/commit/e26f2a9a116e128c407b8268775eaffab02c4a7c))
+
+### Bug Fixes
+
+-   references to useObservableState ([614a569](https://github.com/equinor/fusion-framework/commit/614a5691f856765f07f5d71e39708f80dea49a6e))
+
+## 4.0.2 (2023-01-30)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 4.0.1 (2023-01-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [4.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.12...@equinor/fusion-framework-test-app@4.0.0) (2023-01-27)
+
+### Bug Fixes
+
+-   references ([c3673b8](https://github.com/equinor/fusion-framework/commit/c3673b8bdd1e15a4a5bf0fea867b9c1f34ed41ae))
+
+## [4.0.0-alpha.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.12...@equinor/fusion-framework-test-app@4.0.0-alpha.0) (2023-01-26)
+
+### Bug Fixes
+
+-   references ([eb97aff](https://github.com/equinor/fusion-framework/commit/eb97affb45c653c12ac72d8fdfc16c27864ae32d))
+
+## [3.0.12](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.11...@equinor/fusion-framework-test-app@3.0.12) (2023-01-26)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.10...@equinor/fusion-framework-test-app@3.0.11) (2023-01-19)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 3.0.10 (2023-01-19)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.8...@equinor/fusion-framework-test-app@3.0.9) (2023-01-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.7...@equinor/fusion-framework-test-app@3.0.8) (2023-01-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 3.0.7 (2023-01-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.5...@equinor/fusion-framework-test-app@3.0.6) (2023-01-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.4...@equinor/fusion-framework-test-app@3.0.5) (2023-01-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## 3.0.4 (2023-01-10)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
+## [3.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.2...@equinor/fusion-framework-test-app@3.0.3) (2023-01-04)
+
+**Note:** Version bump only for package @equinor/fusion-framework-test-app
+
 ## [3.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-test-app@3.0.1...@equinor/fusion-framework-test-app@3.0.2) (2023-01-04)
 
 **Note:** Version bump only for package @equinor/fusion-framework-test-app

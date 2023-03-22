@@ -1,9 +1,13 @@
 import { resolve } from 'path';
 
 import { defineConfig, UserConfig, createLogger } from 'vite';
+
 import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 import { resolvePackage } from './app-config.js';
+
+import EnvironmentPlugin from 'vite-plugin-environment';
 
 const createCustomLogger = () => {
     const logger = createLogger();
@@ -23,7 +27,13 @@ const createCustomLogger = () => {
 export const createConfig = (): UserConfig => {
     const { root, pkg } = resolvePackage();
     return defineConfig({
-        plugins: [react()],
+        plugins: [
+            react(),
+            tsconfigPaths(),
+            EnvironmentPlugin({
+                NODE_ENV: 'production',
+            }),
+        ],
         root: root,
         server: {
             middlewareMode: true,

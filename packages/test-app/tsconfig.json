@@ -17,36 +17,31 @@
     "jsx": "react-jsx",
     "rootDir": ".",
     "baseUrl": ".",
-    "paths": {
-      "@equinor/fusion-framework-*": [
-          "../*/src"
-      ],
-    }
   },
   "include": [
     "src"
   ],
   "references": [
     {
-      "path": "../../utils/observable"
+      "path": "../utils/observable"
     },
     {
-      "path": "../../utils/query"
+      "path": "../utils/query"
     },
     {
-      "path": "../react-app"
+      "path": "../react/app"
     },
     {
-      "path": "../framework-react"
+      "path": "../react/framework"
     },
     {
-      "path": "../module-ag-grid"
+      "path": "../modules/ag-grid"
     },
     {
-      "path": "../module-services"
+      "path": "../modules/services"
     },
     {
-      "path": "../module-context"
+      "path": "../modules/context"
     },
     {
       "path": "./tsconfig.node.json"

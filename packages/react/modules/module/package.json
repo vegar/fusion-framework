@@ -1,0 +1,51 @@
+{
+    "name": "@equinor/fusion-framework-react-module",
+    "version": "2.0.2",
+    "main": "dist/esm/index.js",
+    "exports": {
+        ".": "./dist/esm/index.js"
+    },
+    "types": "./dist/types/index.d.ts",
+    "scripts": {
+        "build": "tsc -b",
+        "prepack": "yarn build"
+    },
+    "keywords": [
+        "React",
+        "@equinor/fusion-framework-module"
+    ],
+    "description": "Utils for initializing and consuming fusion framework modules",
+    "author": "odin.rochmann@gmail.com",
+    "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/equinor/fusion-framework.git",
+        "directory": "packages/react/modules/module"
+    },
+    "dependencies": {
+        "@equinor/fusion-framework-module": "^2.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.11",
+        "@types/react-dom": "^17.0.7",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.9.3"
+    },
+    "peerDependencies": {
+        "@types/react": "^17.0.0 || ^18.0.0",
+        "react": "^17.0.0 || ^18.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@types/react": {
+            "optional": true
+        },
+        "react-dom": {
+            "optional": true
+        }
+    }
+}

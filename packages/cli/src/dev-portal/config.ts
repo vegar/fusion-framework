@@ -1,9 +1,11 @@
-import { FusionConfigurator } from '@equinor/fusion-framework-react';
 import { enableAppModule } from '@equinor/fusion-framework-module-app';
 import { ConsoleLogger } from '@equinor/fusion-framework-module-msal/client';
+import { enableBookmark } from '@equinor/fusion-framework-module-bookmark';
+import { FrameworkConfigurator } from '@equinor/fusion-framework';
+import { enableNavigation } from '@equinor/fusion-framework-module-navigation';
 
-export const configure = async (config: FusionConfigurator) => {
-    config.logger.level = 4;
+export const configure = async (config: FrameworkConfigurator) => {
+    config.logger.level = 0;
 
     config.configureServiceDiscovery({
         client: {
@@ -23,6 +25,16 @@ export const configure = async (config: FusionConfigurator) => {
 
     enableAppModule(config);
 
+    enableNavigation(config);
+
+    enableBookmark(config, (builder) => {
+        builder.setSourceSystem({
+            subSystem: 'CLI',
+            identifier: 'fusion-cli',
+            name: 'Fusion CLI',
+        });
+    });
+
     config.onConfigured(() => {
         console.log('framework config done');
     });
@@ -31,7 +43,7 @@ export const configure = async (config: FusionConfigurator) => {
         fusion.auth.defaultClient.setLogger(new ConsoleLogger(0));
 
         console.debug('📒 subscribing to all events');
-        fusion.event.subscribe((e) => console.debug(`🔔🌍 [${e.type}]`, e));
+        // fusion.event.subscribe((e) => console.debug(`🔔🌍 [${e.type}]`, e));
     });
 };
 

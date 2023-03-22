@@ -1,0 +1,37 @@
+{
+  "extends": "../tsconfig.react.json",
+  "compilerOptions": {
+    "outDir": "dist/esm",
+    "rootDir": "src",
+    "declarationDir": "./dist/types",
+    "baseUrl": "src",
+  },
+  "references": [
+   
+    {
+      "path": "../../app"
+    },
+    {
+      "path": "../framework"
+    },
+    {
+      "path": "../modules/module"
+    },
+    {
+      "path": "../modules/http"
+    },
+    {
+      "path": "../modules/context"
+    },
+    {
+      "path": "../modules/bookmark"
+    }
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

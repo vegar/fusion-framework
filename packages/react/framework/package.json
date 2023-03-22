@@ -1,0 +1,80 @@
+{
+    "name": "@equinor/fusion-framework-react",
+    "version": "4.0.5",
+    "description": "",
+    "main": "dist/esm/index.js",
+    "exports": {
+        ".": "./dist/esm/index.js",
+        "./app": "./dist/esm/app/index.js",
+        "./context": "./dist/esm/context/index.js",
+        "./hooks": "./dist/esm/hooks/index.js",
+        "./http": "./dist/esm/http/index.js",
+        "./signalr": "./dist/esm/signalr/index.js"
+    },
+    "types": "dist/types/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "app": [
+                "dist/types/app/index.d.ts"
+            ],
+            "context": [
+                "dist/types/context/index.d.ts"
+            ],
+            "hooks": [
+                "dist/types/hooks/index.d.ts"
+            ],
+            "http": [
+                "dist/types/http/index.d.ts"
+            ],
+            "signalr": [
+                "dist/types/signalr/index.d.ts"
+            ]
+        }
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "prepack": "yarn build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/equinor/fusion-framework.git",
+        "directory": "packages/react/framework"
+    },
+    "dependencies": {
+        "@equinor/fusion-framework": "^6.0.8",
+        "@equinor/fusion-framework-react-module-context": "^4.0.4",
+        "@equinor/fusion-framework-react-module-http": "^2.0.3",
+        "rxjs": "^7.5.7"
+    },
+    "devDependencies": {
+        "@equinor/fusion-framework-module-app": "^4.0.7",
+        "@types/react": "^17.0.11",
+        "@types/react-dom": "^17.0.7",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.9.3"
+    },
+    "peerDependencies": {
+        "@equinor/fusion-framework-react-module-signalr": "*",
+        "@types/react": "^17.0.0 || ^18.0.0",
+        "react": "^17.0.0 || ^18.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@equinor/fusion-framework-react-module-signalr": {
+            "optional": true
+        },
+        "@types/react": {
+            "optional": true
+        },
+        "react-dom": {
+            "optional": true
+        }
+    }
+}

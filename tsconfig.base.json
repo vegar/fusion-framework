@@ -11,24 +11,12 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "stripInternal": true,
+        "skipLibCheck": true,
         "lib": [
             "esnext",
             "dom",
             "dom.iterable"
         ],
         "composite": true,
-        "rootDir": ".",
-        "baseUrl": "./packages",
-        "paths": {
-            "@equinor/fusion-framework-*": [
-                "./*/src"
-            ],
-            "@equinor/fusion-observable": [
-                "./observable/src"
-            ],
-            "@equinor/fusion-observable/*": [
-                "./observable/src/*"
-            ]
-        }
     }
 }

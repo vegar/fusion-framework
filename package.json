@@ -1,20 +1,20 @@
 {
   "name": "fusion-framework",
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta.0",
   "description": "Framework for Fusion Eco System",
   "private": true,
+  "type": "module",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "lint": "eslint 'packages/*/src/**/*.{ts,tsx}'",
-    "clean": "yarn run clean:modules && yarn run clean:build",
-    "clean:modules": "rm -rf packages/*/node_modules && rm -rf node_modules",
-    "clean:build": "rm -rf packages/*/dist",
+    "clean": "yarn run clean:npm && yarn run clean:build",
+    "clean:npm": "rm -rf node_modules && npx lerna exec 'rm -rf node_modules'",
+    "clean:build": "npx lerna exec 'rm -rf dist'",
     "build": "lerna run build",
     "build:affected": "nx run-many --target=build --all",
-    "build:clean": "rm -rf packages/*/dist && yarn run build",
-    "lint:report": "eslint --output-file eslint-report.log.json --format json packages/*/src/**",
+    "build:clean": "yarn clean:build && yarn run build",
+    "lint": "eslint 'packages/**/src/**/*.{ts,tsx}'",
+    "lint:report": "yarn lint --output-file eslint-report.log.json --format json",
     "lint:staged": "lint-staged",
-    "npm:clean": "rm -rf node_modules && lerna exec 'rm -rf node_modules'",
     "docs": "cd packages/docs && yarn build -d ../../docs",
     "yalc": "yarn run build && lerna exec 'yalc push --private'",
     "test": "jest",
@@ -40,35 +40,40 @@
   },
   "homepage": "https://github.com/equinor/fusion-framwork#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "@equinor/eslint-config-fusion": "^1.0.2",
-    "@nrwl/nx-cloud": "^15.0.0",
-    "@types/jest": "^29.2.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@equinor/eslint-config-fusion": "^2.0.0",
+    "@equinor/eslint-config-fusion-react": "^1.0.0",
+    "@nrwl/nx-cloud": "^15.0.2",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.33.0",
     "eslint-plugin-rxjs": "^5.0.2",
-    "husky": "^8.0.1",
-    "jest": "^29.2.2",
-    "lerna": "^6.0.1",
+    "husky": "^8.0.3",
+    "jest": "^29.4.1",
+    "lerna": "^6.4.1",
     "lerna-update-wizard": "^1.1.2",
-    "lint-staged": "^13.0.3",
-    "nx": "15.3.3",
-    "prettier": "^2.7.1",
-    "ts-jest": "^29.0.3",
-    "tslib": "^2.4.0",
-    "typescript": "^4.9.3",
-    "yarn": "^1.22.19"
+    "lint-staged": "^13.1.0",
+    "nx": "15.8.7",
+    "prettier": "^2.8.3",
+    "ts-jest": "^29.0.5",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "typescript": ">=4.5"
   },
   "workspaces": {
-    "packages": ["packages/*", "utils/*", "cookbooks/*"]
+    "packages": [
+      "packages/**",
+      "cookbooks/*"
+    ]
   },
   "lint-staged": {
     "./packages/**/src/**/*.{ts,tsx}": [
       "eslint --quiet --fix"
     ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0"
   }
 }

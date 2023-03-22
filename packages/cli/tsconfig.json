@@ -9,17 +9,29 @@
   },
   "references": [
     {
-      "path": "../../utils/observable"
+      "path": "../utils/observable"
     },
     {
-      "path": "../module-context"
+      "path": "../utils/query"
+    },
+    {
+      "path": "../modules/http"
+    },
+    {
+      "path": "../modules/context"
+    },
+    {
+      "path": "../modules/bookmark"
     },
     {
       "path": "../app"
     },
     {
-      "path": "../framework-react"
+      "path": "../react/framework"
     },
+    {
+      "path": "../react/modules/bookmark"
+    }
   ],
   "include": [
     "src/**/*",

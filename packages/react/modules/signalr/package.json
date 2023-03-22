@@ -1,0 +1,43 @@
+{
+    "name": "@equinor/fusion-framework-react-module-signalr",
+    "version": "1.0.2",
+    "description": "",
+    "sideEffects": false,
+    "main": "dist/esm/index.js",
+    "types": "index.d.ts",
+    "typesVersions": {
+        ">=4.2": {
+            "*": [
+                "dist/types/*"
+            ]
+        }
+    },
+    "exports": {
+        ".": "./dist/esm/index.js"
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "prepack": "yarn build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/equinor/fusion-framework.git",
+        "directory": "packages/react/modules/signalr"
+    },
+    "dependencies": {
+        "@equinor/fusion-framework-module-signalr": "^1.0.1"
+    },
+    "devDependencies": {
+        "react": "^18.2.0"
+    },
+    "peerDependencies": {
+        "@equinor/fusion-framework-react-module": "^1.1.1",
+        "react": "^17.0.0 || ^18.0.0"
+    }
+}

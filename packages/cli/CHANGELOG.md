@@ -3,6 +3,195 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.1...@equinor/fusion-framework-cli@5.1.2) (2023-03-21)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.1.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.0...@equinor/fusion-framework-cli@5.1.1) (2023-03-20)
+
+### Bug Fixes
+
+-   **cli:** add missing proxy target ([1f14f99](https://github.com/equinor/fusion-framework/commit/1f14f99290d6ee3c112115f29b9f28d1a6959b62))
+
+## [5.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.8...@equinor/fusion-framework-cli@5.1.0) (2023-03-20)
+
+### Features
+
+-   **cli:** allow configuring portal host in cli ([9641b21](https://github.com/equinor/fusion-framework/commit/9641b215a1bff957687e9eda661679f000588a47))
+
+## [5.0.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.7...@equinor/fusion-framework-cli@5.0.8) (2023-03-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.0.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.7...@equinor/fusion-framework-cli@5.0.7) (2023-03-20)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.0.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.6...@equinor/fusion-framework-cli@5.0.7) (2023-03-17)
+
+### Bug Fixes
+
+-   **cli:** use referer as proxy uri ([35edbdc](https://github.com/equinor/fusion-framework/commit/35edbdcae83d51595e013550303b8ea8b7e1c675))
+
+## [5.0.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.5...@equinor/fusion-framework-cli@5.0.6) (2023-03-10)
+
+### Bug Fixes
+
+-   **cli:** fix mounting element in app loader ([0410c7f](https://github.com/equinor/fusion-framework/commit/0410c7f0ce7a1b9f25c7716e0206534a1d047529))
+
+## 5.0.5 (2023-03-09)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.0.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.3...@equinor/fusion-framework-cli@5.0.4) (2023-03-09)
+
+### Bug Fixes
+
+-   **cli:** include `NODE_ENV` environment in build ([28faf2a](https://github.com/equinor/fusion-framework/commit/28faf2abc1adb09cc52242e26abb61e2ddfeb6c1))
+
+## [5.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.2...@equinor/fusion-framework-cli@5.0.3) (2023-03-06)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.1...@equinor/fusion-framework-cli@5.0.2) (2023-02-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.0.0...@equinor/fusion-framework-cli@5.0.1) (2023-02-20)
+
+### Bug Fixes
+
+-   **cli:** allow cli to read paths from tsconfig ([c78673f](https://github.com/equinor/fusion-framework/commit/c78673f7d85a2c3697798aa6a59ef1792ca53af6))
+
+## [5.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.1.0...@equinor/fusion-framework-cli@5.0.0) (2023-02-13)
+
+### ⚠ BREAKING CHANGES
+
+-   **utils/observable:** `useObservableInputState` and `useObservableSelectorState` now return full state, not only value
+
+### Bug Fixes
+
+-   **utils/observable:** rename `next` to `value`from `useObservableState` ([4a08445](https://github.com/equinor/fusion-framework/commit/4a08445645af2488666564c2da716d32aa5e88c0))
+-   **utils/observable:** when subject in useObservableState reset state ([9c5c041](https://github.com/equinor/fusion-framework/commit/9c5c041d3d8c0b01bd507ea7f672711d9f5cb653))
+
+## [4.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.0.4...@equinor/fusion-framework-cli@4.1.0) (2023-02-09)
+
+### Features
+
+-   (framework): person provider ([d4a3936](https://github.com/equinor/fusion-framework/commit/d4a3936d6a60f093f71eac1dacc05cd60c7bf554))
+-   **cli:** add react es lint for cli ([55137d7](https://github.com/equinor/fusion-framework/commit/55137d7baee9611fcb3e4bde4a4c0a954a8a68c6))
+
+### Bug Fixes
+
+-   **cli:** add custom element register ([3f30c34](https://github.com/equinor/fusion-framework/commit/3f30c34324ca43fcc947f9163919a31611471afd))
+-   **cli:** update person resolver ([4ef99ae](https://github.com/equinor/fusion-framework/commit/4ef99ae5da870ec5d076041996ee98548fc18e5a))
+
+## [4.0.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.0.4...@equinor/fusion-framework-cli@4.0.5) (2023-02-02)
+
+### Bug Fixes
+
+-   **cli:** add custom element register ([3f30c34](https://github.com/equinor/fusion-framework/commit/3f30c34324ca43fcc947f9163919a31611471afd))
+
+## 4.0.4 (2023-02-02)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [4.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.0.2...@equinor/fusion-framework-cli@4.0.3) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [4.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.0.0...@equinor/fusion-framework-cli@4.0.2) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [4.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@4.0.0...@equinor/fusion-framework-cli@4.0.1) (2023-02-01)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [4.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.1.0...@equinor/fusion-framework-cli@4.0.0) (2023-02-01)
+
+### ⚠ BREAKING CHANGES
+
+-   hook has new return type
+
+### Bug Fixes
+
+-   references to useObservableState ([614a569](https://github.com/equinor/fusion-framework/commit/614a5691f856765f07f5d71e39708f80dea49a6e))
+
+## [3.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.0.5...@equinor/fusion-framework-cli@3.1.0) (2023-02-01)
+
+### Features
+
+-   **equinorloader:** centered starprogress loader ([081226d](https://github.com/equinor/fusion-framework/commit/081226d4afa1bdbb9daca0304ce34bc13471e8d7))
+
+### Bug Fixes
+
+-   **cli:** fixing contextresolver ([41edf18](https://github.com/equinor/fusion-framework/commit/41edf18223aed93b393c0fab1e1f41797b7f06da)), closes [#591](https://github.com/equinor/fusion-framework/issues/591)
+
+## [3.0.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.0.4...@equinor/fusion-framework-cli@3.0.5) (2023-01-30)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [3.0.4](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.0.3...@equinor/fusion-framework-cli@3.0.4) (2023-01-30)
+
+### Bug Fixes
+
+-   **cli:** disable 'x-powered-by' ([29cc4a8](https://github.com/equinor/fusion-framework/commit/29cc4a866f3f38a17a2df23eac047e7b82129696))
+
+## [3.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.0.2...@equinor/fusion-framework-cli@3.0.3) (2023-01-30)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [3.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@3.0.1...@equinor/fusion-framework-cli@3.0.2) (2023-01-27)
+
+### Bug Fixes
+
+-   **cli:** named exports ([b03381b](https://github.com/equinor/fusion-framework/commit/b03381bde924db1979e9e5e870b356dc5db4b81d))
+
+## 3.0.1 (2023-01-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [3.0.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.11...@equinor/fusion-framework-cli@3.0.0) (2023-01-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [3.0.0-alpha.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.11...@equinor/fusion-framework-cli@3.0.0-alpha.0) (2023-01-26)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [2.0.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.10...@equinor/fusion-framework-cli@2.0.11) (2023-01-26)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## 2.0.10 (2023-01-19)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [2.0.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.8...@equinor/fusion-framework-cli@2.0.9) (2023-01-17)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [2.0.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.7...@equinor/fusion-framework-cli@2.0.8) (2023-01-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## 2.0.7 (2023-01-16)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [2.0.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.5...@equinor/fusion-framework-cli@2.0.6) (2023-01-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [2.0.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.4...@equinor/fusion-framework-cli@2.0.5) (2023-01-12)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## 2.0.4 (2023-01-10)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
 ## [2.0.3](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@2.0.2...@equinor/fusion-framework-cli@2.0.3) (2023-01-04)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cli

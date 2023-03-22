@@ -23,11 +23,17 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
 
     const app = express();
 
-    const port = config.viteConfig.server?.port ?? 3000;
-    const host = `http://localhost:${port}`;
+    app.disable('x-powered-by');
+
+    const configHost = config.viteConfig.server?.host;
+    // todo allow path
+    const host = new URL('/', typeof configHost === 'string' ? configHost : 'http://localhost');
+    host.port = String(config.viteConfig.server?.port ?? 3000);
 
     const spinner = ora('Configuring dev-server').start();
     const vite = await createServer(config.viteConfig);
+
+    const { portalHost } = config.appConfig;
 
     spinner.succeed('Configured dev-server');
 
@@ -39,10 +45,10 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
 
     app.use(
         createProxyMiddleware('/_discovery/environments/current', {
-            target: 'https://pro-s-portal-ci.azurewebsites.net',
+            target: portalHost,
             changeOrigin: true,
             selfHandleResponse: true,
-            onProxyRes: responseInterceptor(async (responseBuffer) => {
+            onProxyRes: responseInterceptor(async (responseBuffer, _proxyRes, req) => {
                 const response = JSON.parse(responseBuffer.toString('utf8'));
                 response.environmentName = 'DEVELOPMENT';
                 response.services = response.services.filter(
@@ -50,7 +56,7 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
                 );
                 response.services.push({
                     key: 'app',
-                    uri: host,
+                    uri: new URL('/', req.headers.referer).href,
                 });
                 return JSON.stringify(response);
             }),
@@ -61,7 +67,7 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
         '/api/apps/:appKey/config',
         // '/api/widget/:appKey/config',
         createProxyMiddleware('/api/apps/*/config', {
-            target: 'https://pro-s-portal-ci.azurewebsites.net',
+            target: portalHost,
             changeOrigin: true,
             selfHandleResponse: true,
             onProxyRes: responseInterceptor(async (responseBuffer, proxyRes, req, res) => {
@@ -86,7 +92,7 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
     app.get(
         '/api/apps/:appKey',
         createProxyMiddleware('/api/apps/*', {
-            target: 'https://pro-s-portal-ci.azurewebsites.net',
+            target: portalHost,
             changeOrigin: true,
             selfHandleResponse: true,
             onProxyRes: responseInterceptor(async (responseBuffer, proxyRes, req, res) => {
@@ -94,7 +100,7 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
                 if (appManifest.key === appKey) {
                     const response = {
                         ...appManifest,
-                        entry: new URL(appManifest.main, host).href,
+                        entry: new URL(appManifest.main, req.headers.referer).href,
                     };
                     if (Number(proxyRes.statusCode) === 404) {
                         res.statusCode = 200;
@@ -117,7 +123,7 @@ export const server = async (config: { viteConfig: UserConfig; appConfig: any })
     });
 
     spinner.start('Starting dev-server');
-    const instance = app.listen(port);
+    const instance = app.listen(host.port);
     vite.watcher.on('change', async (x) => {
         if (x === config.appConfig.dev?.configSource?.file) {
             console.log('🛠', kleur.red('config changed, closing dev server'));

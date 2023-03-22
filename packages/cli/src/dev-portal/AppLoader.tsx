@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { Subscription } from 'rxjs';
 
 import { useFramework } from '@equinor/fusion-framework-react';
-import { StarProgress } from '@equinor/fusion-react-progress-indicator';
 
 import { useObservableState } from '@equinor/fusion-observable/react';
 
@@ -11,6 +10,7 @@ import { AppManifestError } from '@equinor/fusion-framework-module-app/errors.js
 
 import { ErrorViewer } from './ErrorViewer';
 import { AppModule } from '@equinor/fusion-framework-module-app';
+import EquinorLoader from './EquinorLoader';
 
 /**
  * React Functional Component for handling current application
@@ -26,25 +26,19 @@ export const AppLoader = (props: { appKey: string }) => {
     /** reference of application section/container */
     const ref = useRef<HTMLElement>(null);
 
-    /**
-     * reference of element which application rendered to
-     *
-     * the current value will be created when application tries to render.
-     * since we cant make sure that application render does ensure teardown,
-     * each render instance will have its own element, which then will be added to the application container.
-     */
-    const appRef = useRef<HTMLDivElement>(document.createElement('div'));
-
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<Error | undefined>();
 
+    // TODO change to `useCurrentApp`
     /** observe and use the current selected application from framework */
-    const currentApp = useObservableState(fusion.modules.app.current$);
+    const { value: currentApp } = useObservableState(
+        useMemo(() => fusion.modules.app.current$, [fusion.modules.app])
+    );
 
     useEffect(() => {
         /** when appKey property change, assign it to current */
         fusion.modules.app.setCurrentApp(appKey);
-    }, [appKey]);
+    }, [appKey, fusion]);
 
     useEffect(() => {
         /** flag that application is loading */
@@ -66,15 +60,22 @@ export const AppLoader = (props: { appKey: string }) => {
                     ) ?? [''];
 
                     /** create a 'private' element for the application */
-                    appRef.current = document.createElement('div');
+                    const el = document.createElement('div');
+
+                    if (!ref.current) {
+                        throw Error('Missing application mounting point');
+                    }
+
+                    ref.current.appendChild(el);
 
                     /** extract render callback function from javascript module */
                     const render = script.renderApp ?? script.default;
 
                     /** add application teardown to current render effect teardown */
-                    subscription.add(
-                        render(appRef.current, { fusion, env: { basename, config, manifest } })
-                    );
+                    subscription.add(render(el, { fusion, env: { basename, config, manifest } }));
+
+                    /** remove app element when application unmounts */
+                    subscription.add(() => el.remove());
                 },
                 complete: () => {
                     /** flag that application is no longer loading */
@@ -89,25 +90,7 @@ export const AppLoader = (props: { appKey: string }) => {
 
         /** teardown application when hook unmounts */
         return () => subscription.unsubscribe();
-    }, [currentApp, appRef]);
-
-    useEffect(() => {
-        const refEl = ref.current;
-        const appEl = appRef.current;
-        if (!(appEl && refEl)) {
-            return;
-        }
-        /** when application has rendered on referenced element, add element to application sections */
-        refEl.appendChild(appEl);
-        return () => {
-            try {
-                /** remove application element on unmount */
-                refEl.removeChild(appEl);
-            } catch (err) {
-                console.error(err);
-            }
-        };
-    }, [ref.current, appRef.current]);
+    }, [fusion, currentApp, ref]);
 
     if (error) {
         if (error.cause instanceof AppManifestError) {
@@ -127,11 +110,7 @@ export const AppLoader = (props: { appKey: string }) => {
         );
     }
 
-    if (loading) {
-        return <StarProgress text="Loading Application" />;
-    }
-
-    return <section ref={ref}></section>;
+    return <section ref={ref}>{loading && <EquinorLoader text="Loading Application" />}</section>;
 };
 
 export default AppLoader;

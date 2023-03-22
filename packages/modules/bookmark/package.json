@@ -1,0 +1,47 @@
+{
+    "name": "@equinor/fusion-framework-module-bookmark",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/esm/index.js",
+    "exports": {
+        ".": "./dist/esm/index.js",
+        "./package.json": "./package.json",
+        "./utils": "./dist/esm/utils/index.js"
+    },
+    "types": "./dist/types/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "utils": [
+                "dist/types/utils/index.d.ts"
+            ]
+        }
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "prepack": "yarn build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/equinor/fusion-framework.git",
+        "directory": "packages/modules/context"
+    },
+    "dependencies": {
+        "@equinor/fusion-query": "^2.0.5"
+    },
+    "devDependencies": {
+        "@equinor/fusion-framework-module": "^2.0.0",
+        "@equinor/fusion-framework-module-event": "^2.0.0",
+        "@equinor/fusion-framework-module-services": "^2.0.6",
+        "rxjs": "^7.5.7"
+    },
+    "peerDependencies": {
+        "@equinor/fusion-framework-module": ">=1.2.5",
+        "rxjs": "^7.5.7"
+    }
+}

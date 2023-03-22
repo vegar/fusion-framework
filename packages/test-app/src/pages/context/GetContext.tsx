@@ -1,18 +1,26 @@
 import { useAppModule } from '@equinor/fusion-framework-react-app';
 import { ContextModule } from '@equinor/fusion-framework-module-context';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { useObservableState } from '@equinor/fusion-observable/react';
 import { useFramework } from '@equinor/fusion-framework-react';
 
 export const useCurrentContext = () => {
     const provider = useAppModule<ContextModule>('context');
-    return useObservableState(provider.contextClient.currentContext$);
+    const currentContext$ = useMemo(
+        () => provider.contextClient.currentContext$,
+        [provider.contextClient]
+    );
+    return useObservableState(currentContext$).value;
 };
 
 const useFrameworkCurrentContext = () => {
     const provider = useFramework<[ContextModule]>().modules.context;
-    return useObservableState(provider.contextClient.currentContext$);
+    const currentContext$ = useMemo(
+        () => provider.contextClient.currentContext$,
+        [provider.contextClient]
+    );
+    return useObservableState(currentContext$).value;
 };
 
 export const GetContext = () => {
