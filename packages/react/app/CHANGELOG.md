@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.20](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.19...@equinor/fusion-framework-react-app@3.0.20) (2023-03-28)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [3.0.19](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.18...@equinor/fusion-framework-react-app@3.0.19) (2023-03-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [3.0.18](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.17...@equinor/fusion-framework-react-app@3.0.18) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [3.0.17](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.16...@equinor/fusion-framework-react-app@3.0.17) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## [3.0.16](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.15...@equinor/fusion-framework-react-app@3.0.16) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## 3.0.15 (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
+## 3.0.14 (2023-03-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-react-app
+
 ## [3.0.13](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-react-app@3.0.12...@equinor/fusion-framework-react-app@3.0.13) (2023-03-20)
 
 **Note:** Version bump only for package @equinor/fusion-framework-react-app

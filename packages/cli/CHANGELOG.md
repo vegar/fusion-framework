@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.12](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.11...@equinor/fusion-framework-cli@5.1.12) (2023-03-31)
+
+### Bug Fixes
+
+-   force build of cli ([3fdff80](https://github.com/equinor/fusion-framework/commit/3fdff80c69c769d789d00f7cec5895a080be3ccf))
+
+## [5.1.11](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.9...@equinor/fusion-framework-cli@5.1.11) (2023-03-31)
+
+### Bug Fixes
+
+-   **cli:** contextSearch shows current context in selector ([52b4cc4](https://github.com/equinor/fusion-framework/commit/52b4cc4f2ade64e4f2722e16a2d27358d0121c05))
+-   **cli:** moved vite-plugin-enviornment from dev-dependencie to dependecies ([1c42889](https://github.com/equinor/fusion-framework/commit/1c428894503cdd95c5bfc2b60c0148860491f305))
+-   **cli:** update deps ([86cc317](https://github.com/equinor/fusion-framework/commit/86cc31728ce6d78ebd198eadc0ccddcaf16df55e))
+
+## [5.1.10](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.9...@equinor/fusion-framework-cli@5.1.10) (2023-03-31)
+
+### Bug Fixes
+
+-   **cli:** contextSearch shows current context in selector ([52b4cc4](https://github.com/equinor/fusion-framework/commit/52b4cc4f2ade64e4f2722e16a2d27358d0121c05))
+-   **cli:** moved vite-plugin-enviornment from dev-dependencie to dependecies ([1c42889](https://github.com/equinor/fusion-framework/commit/1c428894503cdd95c5bfc2b60c0148860491f305))
+-   **cli:** update deps ([86cc317](https://github.com/equinor/fusion-framework/commit/86cc31728ce6d78ebd198eadc0ccddcaf16df55e))
+
+## [5.1.9](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.8...@equinor/fusion-framework-cli@5.1.9) (2023-03-28)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.1.8](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.7...@equinor/fusion-framework-cli@5.1.8) (2023-03-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.1.7](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.6...@equinor/fusion-framework-cli@5.1.7) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.1.6](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.5...@equinor/fusion-framework-cli@5.1.6) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## [5.1.5](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.4...@equinor/fusion-framework-cli@5.1.5) (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## 5.1.4 (2023-03-24)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cli
+
+## 5.1.3 (2023-03-22)
+
+### Bug Fixes
+
+-   **pr:** Fixing pr comments ([4ee3fb3](https://github.com/equinor/fusion-framework/commit/4ee3fb3b509c7b7560378e18ee51d9c1759a8685))
+
 ## [5.1.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cli@5.1.1...@equinor/fusion-framework-cli@5.1.2) (2023-03-21)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cli

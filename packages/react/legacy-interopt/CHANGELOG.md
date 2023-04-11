@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.1.17 (2023-04-11)
+
+### Bug Fixes
+
+-   **legacy-interopt:** react 17.0.2 as dependecy not 17.0.52 since it fails fusion-cli ([d7edcd2](https://github.com/equinor/fusion-framework/commit/d7edcd203f6ecaac8baa53425804ecd95e4eace5))
+
+## [2.1.17](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-legacy-interopt@2.1.16...@equinor/fusion-framework-legacy-interopt@2.1.17) (2023-03-28)
+
+**Note:** Version bump only for package @equinor/fusion-framework-legacy-interopt
+
+## 2.1.16 (2023-03-27)
+
+**Note:** Version bump only for package @equinor/fusion-framework-legacy-interopt
+
+## [2.1.15](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-legacy-interopt@2.1.14...@equinor/fusion-framework-legacy-interopt@2.1.15) (2023-03-22)
+
+**Note:** Version bump only for package @equinor/fusion-framework-legacy-interopt
+
 ## 2.1.14 (2023-03-22)
 
 **Note:** Version bump only for package @equinor/fusion-framework-legacy-interopt

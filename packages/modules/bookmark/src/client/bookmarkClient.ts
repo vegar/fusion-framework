@@ -199,6 +199,7 @@ export class BookmarkClient {
                 this.#state.subject.addEffect('update::success', (action) => {
                     subscriber.next(action.payload as Bookmark<T>);
                     subscriber.complete();
+                    this.#queryBookmarkById.cache.invalidate(action.payload.id);
                 })
             );
         });
@@ -215,6 +216,7 @@ export class BookmarkClient {
                 this.#state.subject.addEffect('delete::success', (action) => {
                     subscriber.next(action.payload);
                     subscriber.complete();
+                    this.#queryBookmarkById.cache.invalidate(action.payload);
                 })
             );
         });
@@ -222,6 +224,20 @@ export class BookmarkClient {
 
     public async deleteBookmarkByIdAsync(bookmarkId: string): Promise<string> {
         return lastValueFrom(this.deleteBookmarkById(bookmarkId));
+    }
+
+    public async addBookmarkFavoriteAsync(bookmarkId: string): Promise<void> {
+        this.#bookmarkAPiClient.addFavorite('v1', { bookmarkId });
+    }
+
+    public async removeBookmarkFavoriteAsync(bookmarkId: string): Promise<void> {
+        this.#bookmarkAPiClient.removeFavorite('v1', { bookmarkId });
+    }
+
+    public async verifyBookmarkFavoriteAsync(bookmarkId: string): Promise<boolean> {
+        const response = await this.#bookmarkAPiClient.verifyFavorite('v1', { bookmarkId });
+        if (response.ok) return true;
+        return false;
     }
 
     dispose(): void {
