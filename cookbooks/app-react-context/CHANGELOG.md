@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.42...@equinor/fusion-framework-cookbook-app-react-context@3.1.0) (2023-04-14)
+
+### Features
+
+-   **cookbooks/app-react-context:** add related context ([52e9e96](https://github.com/equinor/fusion-framework/commit/52e9e9682e92c5824f42118ea0ce573d1c00f87e))
+
+## [3.0.42](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.39...@equinor/fusion-framework-cookbook-app-react-context@3.0.42) (2023-04-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [3.0.41](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.39...@equinor/fusion-framework-cookbook-app-react-context@3.0.41) (2023-04-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [3.0.40](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.39...@equinor/fusion-framework-cookbook-app-react-context@3.0.40) (2023-04-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [3.0.39](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.38...@equinor/fusion-framework-cookbook-app-react-context@3.0.39) (2023-04-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [3.0.38](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.37...@equinor/fusion-framework-cookbook-app-react-context@3.0.38) (2023-04-14)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
+## [3.0.37](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.36...@equinor/fusion-framework-cookbook-app-react-context@3.0.37) (2023-04-13)
+
+**Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context
+
 ## [3.0.36](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-cookbook-app-react-context@3.0.35...@equinor/fusion-framework-cookbook-app-react-context@3.0.36) (2023-04-11)
 
 **Note:** Version bump only for package @equinor/fusion-framework-cookbook-app-react-context

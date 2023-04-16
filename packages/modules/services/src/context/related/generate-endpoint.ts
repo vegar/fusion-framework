@@ -5,12 +5,12 @@ import { UnsupportedApiVersion } from '@equinor/fusion-framework-module-services
 import { ApiVersion } from '@equinor/fusion-framework-module-services/context';
 
 import type {
-    QueryContextArgs,
-    QueryContextOdataFilter,
-    QueryContextOdataParameters,
+    RelatedContextArgs,
+    RelatedContextOdataFilter,
+    RelatedContextOdataParameters,
 } from './types';
 
-const buildOdataFilter = (filterObj: QueryContextOdataFilter) => {
+const buildOdataFilter = (filterObj: RelatedContextOdataFilter) => {
     return Object.keys(filterObj).reduce((acc, key) => {
         switch (key) {
             case 'type':
@@ -21,8 +21,7 @@ const buildOdataFilter = (filterObj: QueryContextOdataFilter) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
     }, {} as any);
 };
-
-const buildOdataObject = (parameters: QueryContextOdataParameters) => {
+const buildOdataObject = (parameters: RelatedContextOdataParameters) => {
     return Object.entries(parameters)
         .filter(([_, value]) => !!value)
         .reduce((acc, [key, value]) => {
@@ -30,7 +29,7 @@ const buildOdataObject = (parameters: QueryContextOdataParameters) => {
                 case 'filter':
                     return {
                         ...acc,
-                        [key]: buildOdataFilter(value as QueryContextOdataFilter),
+                        [key]: buildOdataFilter(value as RelatedContextOdataFilter),
                     };
                 default:
                     return { ...acc, [key]: parameters[key as keyof typeof parameters] };
@@ -39,13 +38,13 @@ const buildOdataObject = (parameters: QueryContextOdataParameters) => {
         }, {} as any);
 };
 
-const createSearchParameters = (args: string | QueryContextOdataParameters) => {
+const createSearchParameters = (args: string | RelatedContextOdataParameters) => {
     return typeof args === 'string' ? args : buildOdataQuery(buildOdataObject(args));
 };
 
 export const generateEndpoint = <TVersion extends string = keyof typeof ApiVersion>(
     version: TVersion,
-    args: QueryContextArgs<TVersion>
+    args: RelatedContextArgs<TVersion>
 ) => {
     const apiVersion = ApiVersion[version as keyof typeof ApiVersion] ?? version;
     switch (apiVersion) {
@@ -53,13 +52,10 @@ export const generateEndpoint = <TVersion extends string = keyof typeof ApiVersi
             throw new UnsupportedApiVersion(version);
         case ApiVersion.v1:
         default: {
-            const { query, includeDeleted } = args as QueryContextArgs<'v1'>;
-            const params = new URLSearchParams(createSearchParameters(query));
+            const { id, query } = args as RelatedContextArgs<'v1'>;
+            const params = new URLSearchParams(createSearchParameters(query || ''));
             params.append('api-version', apiVersion);
-            if (includeDeleted) {
-                params.append('includeDeleted', 'true');
-            }
-            return `/contexts/?${String(params)}`;
+            return `/contexts/${id}/relations?${String(params)}`;
         }
     }
 };
