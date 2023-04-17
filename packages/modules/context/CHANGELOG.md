@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@3.0.1...@equinor/fusion-framework-module-context@3.0.2) (2023-04-17)
+
+### Bug Fixes
+
+-   **context:** skip clearing context ([d4032b7](https://github.com/equinor/fusion-framework/commit/d4032b78b21d123e67cc7dadc50a65071d976b94))
+
+## [3.0.1](https://github.com/equinor/fusion-framework/compare/@equinor/fusion-framework-module-context@3.0.0...@equinor/fusion-framework-module-context@3.0.1) (2023-04-17)
+
+### Bug Fixes
+
+-   **context:** handle promise rejection of setting context ([96a0054](https://github.com/equinor/fusion-framework/commit/96a0054f6b4e9f3250a2b09493efabe96bf1e2ba))
+
+## 3.0.0 (2023-04-16)
+
+### Features
+
+-   **modules/context:** resolve related context ([0e92583](https://github.com/equinor/fusion-framework/commit/0e925837a4f2651ff9f2a003d13731f6d866412d))
+
 ## 2.0.15 (2023-04-14)
 
 **Note:** Version bump only for package @equinor/fusion-framework-module-context

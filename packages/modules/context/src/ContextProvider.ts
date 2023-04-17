@@ -147,10 +147,10 @@ export class ContextProvider implements IContextProvider {
                         filter((x) => !x.canceled),
                         map(({ next }) => next)
                     )
-                    .subscribe((next) => {
+                    .subscribe(async (next) => {
                         if (next) {
                             try {
-                                this.setCurrentContext(next, {
+                                await this.setCurrentContext(next, {
                                     validate: true,
                                     resolve: true,
                                 });
@@ -188,25 +188,32 @@ export class ContextProvider implements IContextProvider {
                 }
 
                 try {
-                    const resolvedContext = await this.resolveContextAsync(context);
+                    const resolved = await this.resolveContextAsync(context);
                     /** notify listeners about to resolved invalid context */
                     const onSetContextResolved = await this.#event?.dispatchEvent(
                         'onSetContextResolved',
                         {
                             source: this,
                             cancelable: true,
-                            detail: { input: context, result: resolvedContext },
+                            detail: { context, resolved },
                         }
                     );
                     if (onSetContextResolved?.canceled) {
                         throw Error('resolving of context was canceled');
                     }
-                    return this.setCurrentContext(resolvedContext);
-                } catch (err) {
-                    console.error('failed to resolve context', context, err);
-                    this.clearCurrentContext();
+                    return this.setCurrentContext(resolved);
+                } catch (error) {
+                    console.error('failed to resolve context', context, error);
+                    this.#event?.dispatchEvent('onSetContextResolveFailed', {
+                        source: this,
+                        detail: { context, error },
+                    });
                 }
             }
+            this.#event?.dispatchEvent('onSetContextValidationFailed', {
+                source: this,
+                detail: { context },
+            });
             throw Error('failed to validate provided context');
         }
 
@@ -347,8 +354,25 @@ declare module '@equinor/fusion-framework-module-event' {
         onSetContextResolved: FrameworkEvent<
             FrameworkEventInit<
                 {
-                    input: ContextItem;
-                    result?: ContextItem | null;
+                    context: ContextItem;
+                    resolved?: ContextItem | null;
+                },
+                IContextProvider
+            >
+        >;
+        onSetContextValidationFailed: FrameworkEvent<
+            FrameworkEventInit<
+                {
+                    context: ContextItem;
+                },
+                IContextProvider
+            >
+        >;
+        onSetContextResolveFailed: FrameworkEvent<
+            FrameworkEventInit<
+                {
+                    context: ContextItem;
+                    error: unknown;
                 },
                 IContextProvider
             >

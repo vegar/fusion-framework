@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.0.1 (2023-04-17)
+
+### Bug Fixes
+
+-   **context:** skip clearing context ([d4032b7](https://github.com/equinor/fusion-framework/commit/d4032b78b21d123e67cc7dadc50a65071d976b94))
+
+## 3.0.0 (2023-04-16)
+
+### Bug Fixes
+
+-   **modules/services:** fix oData query builder ([95e3e98](https://github.com/equinor/fusion-framework/commit/95e3e9886cbf4d00820577eaf141f83cc8a602b5))
+
 ## 2.6.0 (2023-04-14)
 
 ### Features
